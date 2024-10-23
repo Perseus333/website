@@ -31,51 +31,67 @@ body {
     font-family: "DMMono-Regular";
 }
 
-div {
-    padding-left: 0;
-}
-
 a:link, a:visited {
     color: var(--text-color);
 }
 
-a:hover {
-    font-family: "IBM-Plex Medium";
-}
-
-ul li::before {
-    content: "- "
-}
-
 #content {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    padding: 4em;
+    padding: 4em 0em;
     line-height: 1.8em;
     font-size: var(--text-font-size);
     max-width: 50vw;
+    height: 70%;
     margin: auto;
+    display: grid;
+    place-items: center;
 }
 
 #main {
-    max-width: 60ch;
+    width: 60ch;
 }
 
-#main div {
-    margin-bottom: 6em;
+#cycle-interests:after {
+    animation-name: cycle-interests;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    content: "";
+    color: var(--bg-color);
+    background-color: var(--text-color);
 }
 
-#sidebar {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 25vh;
-    height: 50vh;
-}
+@keyframes cycle-interests {
+    0% {
+        content: "";
+    }
+    5% {
+        content: ".";
+    }
+    10% {
+        content: "..";
+    }
+    15% {
+        content: "...";
+    }
+    25% {
+        content: "on rockets";
+    }
+    40% {
+        content: "programming";
+    }
+    55% {
+        content: "doing calisthenics";
+    }
+    75% {
+        content: "typing fast";
+    }
+    85% {
+        content: "on existential crisis";
+    }
+    100% {
+        content: "idling";
+    }
+  }
 
-#sidebar div {
-    flex: 1;
-}
 
 /* .terminal-container p::before {content: "bob@root:~$ ";} */
