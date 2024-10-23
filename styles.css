@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "IBM-Plex Extra-Light";
+    src: url("./fonts/IBMPlex/IBMPlexMono-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "IBM-Plex Light";
+    src: url("./fonts/IBMPlex/IBMPlexMono-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "IBM-Plex Medium";
+    src: url("./fonts/IBMPlex/IBMPlexMono-Medium.ttf") format("truetype");
+}
+
+:root {
+    --bg-color: black;
+    --text-color: #cacaca;
+    --text-font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: "IBM-Plex Light";
+}
+
+div {
+    padding-left: 0;
+}
+
+a:link, a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    font-family: "IBM-Plex Medium";
+}
+
+ul li::before {
+    content: "- "
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 4em;
+    line-height: 1.8em;
+    font-size: var(--text-font-size);
+    max-width: 50vw;
+    margin: auto;
+}
+
+#main {
+    max-width: 60ch;
+}
+
+#main div {
+    margin-bottom: 6em;
+}
+
+#sidebar {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 25vh;
+    height: 50vh;
+}
+
+#sidebar div {
+    flex: 1;
+}
+
+/* .terminal-container p::before {content: "bob@root:~$ ";} */
