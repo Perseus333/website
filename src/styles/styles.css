@@ -15,8 +15,8 @@
 
 
 :root {
-    --bg-color: black;
-    --text-color: #cacaca;
+    --bg-color: #111111;
+    --text-color: #cbcabe;
     --text-font-size: 16px;
     --line-height: 1.8em;
     --border-thickness: 2px;
