@@ -4,8 +4,8 @@
 }
 
 :root {
-    --text-font-size: 16px;
-    --line-height: 1.8em;
+    --text-font-size: 18px;
+    --line-height: 1.5em;
     --border-thickness: 2px;
 
     /*Grayscale Custom*/
@@ -26,7 +26,7 @@
     
     /*Terminal Aggressive*/
     --terminal-bg-color: black;
-    --terminal-color: lime;
+    --terminal-text-color: lime;
     
     --current-bg-color: var(--grayscale-bg-color);
     --current-text-color: var(--grayscale-text-color);
@@ -56,7 +56,9 @@ body {
 #view {
     background-color: var(--current-bg-color);
     color: var(--current-text-color);
-    font-family: "DMMono-Regular"
+    font-family: "DMMono-Regular";
+    line-height: var(--line-height);
+    font-size: var(--text-font-size);
 }
 
 #grayscale-theme:checked ~ #view {
@@ -80,7 +82,7 @@ body {
 }
 #terminal-theme:checked ~ #view {
     --current-bg-color: var(--terminal-bg-color);
-    --current-text-color: var(--terminal-color);
+    --current-text-color: var(--terminal-text-color);
 }
 
 a:link, a:visited {
@@ -100,24 +102,44 @@ a:link, a:visited {
     margin: 0;
 }
 
+.theme:has(label[for="grayscale-theme"]) {
+    background-color: var(--grayscale-bg-color);
+    color: var(--grayscale-text-color);
+}
+.theme:has(label[for="catppuccin-theme"]) {
+    background-color: var(--catppuccin-bg-color);
+    color: var(--catppuccin-text-color);
+}
+.theme:has(label[for="gruvbox-theme"]) {
+    background-color: var(--gruvbox-bg-color);
+    color: var(--gruvbox-text-color);
+}
+.theme:has(label[for="everforest-theme"]) {
+    background-color: var(--everforest-bg-color);
+    color: var(--everforest-text-color);
+}
+.theme:has(label[for="terminal-theme"]) {
+    background-color: var(--terminal-bg-color);
+    color: var(--terminal-text-color);
+}
+
 #content {
     padding: 4em 0em;
-    line-height: var(--line-height);
-    font-size: var(--text-font-size);
     width: 70vw;
+    height: 25em;
     margin: auto;
     display: grid;
     place-items: center;
     grid-template-rows: 2fr 1fr;
 }
 
-#main {
-    width: 60ch;
+#welcome {
+    width: 40em;
 }
 
 #cycle-interests:after {
     animation-name: cycle-interests;
-    animation-duration: 12s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -130,29 +152,68 @@ a:link, a:visited {
     0% {
         content: "";
     }
-    5% {
+    2% {
         content: ".";
     }
-    10% {
+    3% {
         content: "..";
     }
-    15% {
+    5% {
         content: "...";
     }
-    25% {
-        content: "on rockets";
+    10% {
+        content: "working on rockets";
     }
-    40% {
+    15% {
         content: "programming";
     }
-    55% {
+    20% {
         content: "doing calisthenics";
     }
-    70% {
+    25% {
         content: "typing fast";
     }
-    85% {
+    30% {
         content: "on existential crisis";
+    }
+    35% {
+        content: "exploring";
+    }
+    40% {
+        content: "thinking";
+    }
+    45% {
+        content: "diving into rabbit holes";
+    }
+    50% {
+        content: "ricing";
+    }
+    55% {
+        content: "learning";
+    }
+    60% {
+        content: "writing this website";
+    }
+    65% {
+        content: "journaling";
+    }
+    70% {
+        content: "planning world domination"
+    }
+    75% {
+        content: "learning about rockets";
+    }
+    80% {
+        content: "playing D&D as DM";
+    }
+    85% {
+        content: "diving into rabbit holes";
+    }
+    90% {
+        content: "hiking";
+    }
+    95% {
+        content: "reading";
     }
     100% {
         content: "idling";

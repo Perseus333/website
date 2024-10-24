@@ -5,8 +5,16 @@
   - [x] Cycling words
 - [x] Having a simple, cool, retro filesystem
 - [x] Having several themes without JS
-- [ ] Add more "things to waste my time on"
+- [x] Add more "things to waste my time on"
+- [ ] Make links functional
+- [ ] Add a hook
+- [ ] Add inspiration websites in the about me
+  - [ ] Refact0r
+  - [ ] The Monospace Web
+  - [ ] Saturn something (pshychool)
+  - [ ] fehmer
 - [ ] Optimize for speed
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)
   - [ ] Lighthouse the site
+- [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)
