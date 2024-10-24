@@ -5,81 +5,108 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-	<div id="content">
-		<!--Here goes Header-->
-		<div id="welcome">
-			<h1>Hello there, I'm <em>Perseus</em>!</h1>
-			<p>I love <s>wasting</s> investing my time <span id="cycle-interests"></span></p>
+	<input id="grayscale-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+	<input id="catppuccin-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+	<input id="gruvbox-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+	<input id="everforest-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+	<input id="terminal-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+
+	<div id="view">
+		<details id="theme-menu">
+			<summary>Themes</summary>
+			<div class="theme">
+				<label class="theme-label" for="grayscale-theme">Grayscale</label>
+			</div>
+			<div class="theme">
+				<label class="theme-label" for="catppuccin-theme">Catppuccin</label>
+			</div>
+			<div class="theme">
+				<label class="theme-label" for="gruvbox-theme">Gruvbox</label>
+			</div>
+			<div class="theme">
+				<label class="theme-label" for="everforest-theme">Everforest</label>
+			</div>
+			<div class="theme">
+				<label class="theme-label" for="terminal-theme">Terminal</label>
+			</div>
+		</details>
+		<div id="content">
+			<div id="welcome">
+					<h1>Hello there, I'm <em>Perseus</em>!</h1>
+					<p>I love <s>wasting</s> investing my time <span id="cycle-interests"></span></p>
+			</div>
+			<div id="trees">
+				<ul id="projects-tree" class="tree">
+					<li>
+						<p>/src/projects</p>
+						<ul class="tree-parent">
+							<li>
+								<a>Orbit Simulator</a>
+							</li>
+							<li>
+								<a>Live Rocket HUD</a>
+							</li>
+							<li>
+								<a>TypeRacer Reimagined</a>
+							</li>
+							<li>
+								<a>more...</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="blogs-tree" class="tree">
+					<li>
+						<p><a>/src/blog</a></p>
+						<ul class="tree-parent">
+							<li>
+								<a>Blog 1</a>
+							</li>
+							<li>
+								<a>Blog 2</a>
+							</li>
+							<li>
+								<a>Blog 3</a>
+							</li>
+							<li>
+								<a>more...</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="about-tree" class="tree">
+					<li>
+						<p><a>/src/about</a></p>
+						<ul class="tree-parent">
+							<li>
+								<a>bio</a>
+							</li>
+							<li>
+								<a>skills</a>
+							</li>
+							<li>
+								<a>this-site</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="about-tree" class="tree">
+					<li>
+						<p><a>/src/contact</a></p>
+						<ul class="tree-parent">
+							<li>
+								<a>e-mail</a>
+							</li>
+							<li>
+								<a>discord</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div id="trees">
-			<ul id="projects-tree" class="tree">
-				<li>
-					<p>/src/projects</p>
-					<ul class="tree-parent">
-						<li>
-							<a>Orbit Simulator</a>
-						</li>
-						<li>
-							<a>Live Rocket HUD</a>
-						</li>
-						<li>
-							<a>TypeRacer Reimagined</a>
-						</li>
-						<li>
-							<a>more...</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<ul id="blogs-tree" class="tree">
-				<li>
-					<p><a>/src/blog</a></p>
-					<ul class="tree-parent">
-						<li>
-							<a>Blog 1</a>
-						</li>
-						<li>
-							<a>Blog 2</a>
-						</li>
-						<li>
-							<a>Blog 3</a>
-						</li>
-						<li>
-							<a>more...</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<ul id="about-tree" class="tree">
-				<li>
-					<p><a>/src/about</a></p>
-					<ul class="tree-parent">
-						<li>
-							<a>bio</a>
-						</li>
-						<li>
-							<a>skills</a>
-						</li>
-						<li>
-							<a>this-site</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<ul id="about-tree" class="tree">
-				<li>
-					<p><a>/src/contact</a></p>
-					<ul class="tree-parent">
-						<li>
-							<a>e-mail</a>
-						</li>
-						<li>
-							<a>discord</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+		<div id="js-free">
+			<p title="Because I'm too dumb to understand it">JavaScript Free!</p>
 		</div>
-		<!--Here goes Footer-->
 	</div>
 </body>
