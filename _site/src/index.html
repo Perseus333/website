@@ -1,6 +1,3 @@
----
----
-
 <!DOCTYPE html>
 <head>
 	<meta charset="UTF-8">
@@ -9,10 +6,33 @@
 </head>
 <body>
 	<!--Adds the theme inputs-->
-	{% include theme-inputs.html %}
+	<input id="grayscale-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+<input id="catppuccin-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+<input id="gruvbox-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+<input id="everforest-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+<input id="terminal-theme" class="theme-switch" type="radio" name="theme-switch"></input>
+
+<!--ADD JS HANDLING-->
 
 	<div id="view">
-		{% include theme-menu.html %}
+		<details id="theme-menu">
+    <summary>Themes</summary>
+    <div class="theme">
+        <label class="theme-label" for="grayscale-theme">Grayscale</label>
+    </div>
+    <div class="theme">
+        <label class="theme-label" for="catppuccin-theme">Catppuccin</label>
+    </div>
+    <div class="theme">
+        <label class="theme-label" for="gruvbox-theme">Gruvbox</label>
+    </div>
+    <div class="theme">
+        <label class="theme-label" for="everforest-theme">Everforest</label>
+    </div>
+    <div class="theme">
+        <label class="theme-label" for="terminal-theme">Terminal</label>
+    </div>
+</details>
 		<div id="content">
 			<div id="welcome">
 					<h1>Hello there, I'm <em>Perseus</em>!</h1>

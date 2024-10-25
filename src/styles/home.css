@@ -4,7 +4,7 @@
 }
 
 :root {
-    --text-font-size: 18px;
+    --text-font-size: 16px;
     --line-height: 1.5em;
     --border-thickness: 2px;
 
@@ -294,14 +294,3 @@ Copyright 2024 Oskar Wickström
   }
 
 /*END of Wickström's code*/
-
-
-#js-free {
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-}
-
-#js-free p {
-    margin: 0;
-}
