@@ -1,0 +1,76 @@
+
+
+#grayscale-theme:checked ~ #view {
+    --current-bg-color: var(--grayscale-bg-color);
+    --current-text-color: var(--grayscale-text-color);
+    transition: background-color 1s linear;
+}
+
+#catppuccin-theme:checked ~ #view {
+    --current-bg-color: var(--catppuccin-bg-color);
+    --current-text-color: var(--catppuccin-text-color);
+    transition: background-color 1s linear;
+}
+
+#gruvbox-theme:checked ~ #view {
+    --current-bg-color: var(--gruvbox-bg-color);
+    --current-text-color: var(--gruvbox-text-color);
+    transition: background-color 1s linear;
+}
+
+#everforest-theme:checked ~ #view {
+    --current-bg-color: var(--everforest-bg-color);
+    --current-text-color: var(--everforest-text-color);
+    transition: background-color 1s linear;
+}
+#terminal-theme:checked ~ #view {
+    --current-bg-color: var(--terminal-bg-color);
+    --current-text-color: var(--terminal-text-color);
+    transition: background-color 1s linear;
+}
+
+a:link, a:visited {
+    color: var(--current-text-color);
+}
+
+a {
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    text-decoration-style: solid;
+}
+
+#theme-menu {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+#theme-menu summary {
+    padding-bottom: 1em;
+}
+
+#theme-menu p {
+    margin: 0;
+}
+
+.theme:has(label[for="grayscale-theme"]) {
+    background-color: var(--grayscale-bg-color);
+    color: var(--grayscale-text-color);
+}
+.theme:has(label[for="catppuccin-theme"]) {
+    background-color: var(--catppuccin-bg-color);
+    color: var(--catppuccin-text-color);
+}
+.theme:has(label[for="gruvbox-theme"]) {
+    background-color: var(--gruvbox-bg-color);
+    color: var(--gruvbox-text-color);
+}
+.theme:has(label[for="everforest-theme"]) {
+    background-color: var(--everforest-bg-color);
+    color: var(--everforest-text-color);
+}
+.theme:has(label[for="terminal-theme"]) {
+    background-color: var(--terminal-bg-color);
+    color: var(--terminal-text-color);
+}

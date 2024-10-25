@@ -10,10 +10,10 @@
 - [ ] Implement Jekyll
   - [x] Create include files
   - [x] Test locally in Jekyll
-  - [ ] Set the default landing page as index.md (FIX!!)
-  - [ ] Add more elements as includes
-- [ ] Add a hook
+  - [x] Set the default landing page as index.md (DONE!!)
+  - [x] Add more elements as includes
 - [ ] Create a generic page template
+- [ ] Add a hook
 - [ ] Add inspiration websites in the about me
   - [ ] Refact0r
   - [ ] The Monospace Web
