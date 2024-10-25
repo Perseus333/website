@@ -63,30 +63,43 @@ body {
 
 #grayscale-theme:checked ~ #view {
     --current-bg-color: var(--grayscale-bg-color);
-    --current-text-color: var(--grayscale-text-color)
+    --current-text-color: var(--grayscale-text-color);
+    transition: background-color 1s linear;
 }
 
 #catppuccin-theme:checked ~ #view {
     --current-bg-color: var(--catppuccin-bg-color);
     --current-text-color: var(--catppuccin-text-color);
+    transition: background-color 1s linear;
 }
 
 #gruvbox-theme:checked ~ #view {
     --current-bg-color: var(--gruvbox-bg-color);
     --current-text-color: var(--gruvbox-text-color);
+    transition: background-color 1s linear;
 }
 
 #everforest-theme:checked ~ #view {
     --current-bg-color: var(--everforest-bg-color);
     --current-text-color: var(--everforest-text-color);
+    transition: background-color 1s linear;
 }
 #terminal-theme:checked ~ #view {
     --current-bg-color: var(--terminal-bg-color);
     --current-text-color: var(--terminal-text-color);
+    transition: background-color 1s linear;
 }
 
 a:link, a:visited {
     color: var(--current-text-color);
+}
+
+a {
+    text-decoration-style: dotted;
+}
+
+a:hover {
+    text-decoration-style: solid;
 }
 
 #theme-menu {
@@ -207,7 +220,7 @@ a:link, a:visited {
         content: "playing D&D as DM";
     }
     85% {
-        content: "diving into rabbit holes";
+        content: "divig into more rabbit holes";
     }
     90% {
         content: "hiking";
@@ -223,12 +236,13 @@ a:link, a:visited {
 /*Everything to do with the trees at the start*/
 
 #trees {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     width: 100%;
 }
 
 #trees > ul {
-    flex: auto;
+    padding-right: 2em;
 }
 
 #trees p {

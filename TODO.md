@@ -6,7 +6,7 @@
 - [x] Having a simple, cool, retro filesystem
 - [x] Having several themes without JS
 - [x] Add more "things to waste my time on"
-- [ ] Make links functional
+- [x] Make links functional
 - [ ] Add a hook
 - [ ] Add inspiration websites in the about me
   - [ ] Refact0r
