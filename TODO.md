@@ -10,7 +10,7 @@
 - [ ] Implement Jekyll
   - [x] Create include files
   - [x] Test locally in Jekyll
-  - [ ] Set the default landing page as index.md
+  - [ ] Set the default landing page as index.md (FIX!!)
   - [ ] Add more elements as includes
 - [ ] Add a hook
 - [ ] Create a generic page template
@@ -23,4 +23,5 @@
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)
   - [ ] Lighthouse the site
+  - [ ] Maybe port it to svelte ???
 - [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)

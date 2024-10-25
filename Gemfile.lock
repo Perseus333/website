@@ -42,6 +42,7 @@ GEM
     faraday-net_http (3.3.0)
       net-http
     ffi (1.17.0-x64-mingw-ucrt)
+    fiddle (1.1.4)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     github-pages (232)
@@ -265,6 +266,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     uri (0.13.1)
+    wdm (0.2.0)
     webrick (1.8.2)
 
 PLATFORMS
@@ -274,9 +276,11 @@ DEPENDENCIES
   base64
   bigdecimal
   csv
+  fiddle
   github-pages
   logger
   ostruct
+  wdm
   webrick
 
 BUNDLED WITH
