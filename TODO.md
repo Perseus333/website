@@ -10,6 +10,7 @@
 - [ ] Implement Jekyll
   - [x] Create include files
   - [x] Test locally in Jekyll
+  - [ ] Set the default landing page as index.md
   - [ ] Add more elements as includes
 - [ ] Add a hook
 - [ ] Create a generic page template
