@@ -1,5 +1,5 @@
 ---
-title: On memories and dreams
+title: Memories and dreams
 layout: post
 ---
 

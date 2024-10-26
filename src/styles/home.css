@@ -3,12 +3,18 @@
     display: grid;
 }
 
+#theme-menu {
+    margin-left: 1em;
+}
+
 #content {
     place-items: center;
     display: grid;
     grid-template-rows: 2fr 1fr;
     width: 70vw;
     height: 25em;
+    border: var(--border-thickness) solid var(--current-text-color);
+    padding: 2em;
 }
 
 #welcome {

@@ -21,6 +21,11 @@
 - [x] Add a sidebar
 - [x] Add 404 page
 - [ ] Add some more blogs
+- [ ] Add blog homepage
+- [ ] Add support for RSS
+- [ ] Add a project
+- [ ] Add projects template
+- [ ] Create projects homepage
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Add a hook
 - [ ] Optimize for speed

@@ -5,7 +5,7 @@
         </details>
     </ul>
     <ul id="projects-tree" class="tree">
-        <details>
+        <details {% if page.url == "/" %}open{% endif %}>
             <summary>/src/projects</summary>
             <li>
                 <ul class="tree-parent">
@@ -16,7 +16,7 @@
                         <a href="/404.html">Live Rocket HUD</a>
                     </li>
                     <li>
-                        <a href="/404.html">TypeRacer Reimagined</a>
+                        <a href="/404.html">TR Reimagined</a>
                     </li>
                     <li>
                         <a href="/404.html">more...</a>
@@ -26,7 +26,7 @@
         </details>
     </ul>
     <ul id="blogs-tree" class="tree">
-        <details>
+        <details {% if page.url == "/" %}open{% endif %}>
             <summary>/_posts</summary>
             <li>
                 <ul class="tree-parent">
@@ -43,7 +43,7 @@
         </details>
     </ul>
     <ul id="about-tree" class="tree">
-        <details>
+        <details {% if page.url == "/" %}open{% endif %}>
             <summary>/src/about</summary>
             <li>
                 <ul class="tree-parent">
@@ -61,8 +61,8 @@
         </details>
     </ul>
     <ul id="contact-tree" class="tree">
-        <details>
-            <summary>/src/contact</summary>
+        <details {% if page.url == "/" %}open{% endif %}>
+            <summary>/contact</summary>
             <li>
                 <ul class="tree-parent">
                     <li>
