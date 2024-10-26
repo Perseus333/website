@@ -4,3 +4,4 @@ baseurl: ""
 
 exclude:
   - README.md
+  - vendor/
