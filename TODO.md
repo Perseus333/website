@@ -7,21 +7,25 @@
 - [x] Having several themes without JS
 - [x] Add more "things to waste my time on"
 - [x] Make links functional
-- [ ] Implement Jekyll
+- [x] Implement Jekyll
   - [x] Create include files
   - [x] Test locally in Jekyll
   - [x] Set the default landing page as index.md (DONE!!)
   - [x] Add more elements as includes
-- [ ] Create a generic page template
+- [x] Create my own jekyll blog theme
+- [x] Add inspiration websites in the about me
+  - [x] Refact0r
+  - [x] The Monospace Web
+  - [-] Saturn something (pshychool)
+  - [x] fehmer
+- [x] Add a sidebar
+- [x] Add 404 page
+- [ ] Add some more blogs
 - [ ] Add a hook
-- [ ] Add inspiration websites in the about me
-  - [ ] Refact0r
-  - [ ] The Monospace Web
-  - [ ] Saturn something (pshychool)
-  - [ ] fehmer
 - [ ] Optimize for speed
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)
   - [ ] Lighthouse the site
   - [ ] Maybe port it to svelte ???
 - [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)
+- [ ] umami analytics

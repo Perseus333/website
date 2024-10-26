@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% include general-style.html %}
+    {% include themes-style.html %}   
+    {% include trees-style.html %}
+    {% include post-style.html %}
+  </head>
+  <body>
+    {% include themes-inputs.html %}
+    <div id="view">
+      <div id="sidebar">
+        {% include themes.html %}
+        <div id="trees-container">
+          {% include trees.html %}
+        </div>
+      </div>
+      <div id="content">
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,76 +1,14 @@
-@font-face {
-    font-family: "DMMono-Regular";
-    src: url("../fonts/DMmono/DMMono-Regular.ttf") format("truetype");
-}
-
-:root {
-    --text-font-size: 16px;
-    --line-height: 1.5em;
-    --border-thickness: 2px;
-
-    /*Grayscale Custom*/
-    --grayscale-bg-color: #111111;
-    --grayscale-text-color: #cacaca;
-    
-    /*Catppuccin Macchiato*/
-    --catppuccin-bg-color:  #24273a;
-    --catppuccin-text-color: #cad3f5;
-    
-    /*Gruvbox Dark*/
-    --gruvbox-bg-color: #282828;
-    --gruvbox-text-color: #ebdbb2;
-    
-    /*Everforest Dark*/
-    --everforest-bg-color: #2d353b;
-    --everforest-text-color: #d3c6aa;
-    
-    /*Terminal Aggressive*/
-    --terminal-bg-color: black;
-    --terminal-text-color: lime;
-    
-    --current-bg-color: var(--grayscale-bg-color);
-    --current-text-color: var(--grayscale-text-color);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body > input {
-    display: none;
-}
-
-body {
-    margin: 0;
-}
-
 #view {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+    justify-items: center;
     display: grid;
-    justify-items: centers;
-
 }
-
-#view {
-    background-color: var(--current-bg-color);
-    color: var(--current-text-color);
-    font-family: "DMMono-Regular";
-    line-height: var(--line-height);
-    font-size: var(--text-font-size);
-}
-
-
 
 #content {
-    padding: 4em 0em;
+    place-items: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
     width: 70vw;
     height: 25em;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    grid-template-rows: 2fr 1fr;
 }
 
 #welcome {
@@ -158,6 +96,4 @@ body {
     100% {
         content: "idling";
     }
-}
-
-/*Everything to do with the trees at the start*/
+}   

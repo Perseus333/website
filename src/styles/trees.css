@@ -1,3 +1,12 @@
+#trees {
+  display: grid;
+  width: 100%;
+}
+
+#trees-container {
+  height: fit-content;
+}
+
 #trees > ul {
     padding-right: 2em;
 }

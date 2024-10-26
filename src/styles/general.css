@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "DMMono-Regular";
+    src: url("../fonts/DMmono/DMMono-Regular.ttf") format("truetype");
+}
+
+:root {
+    --text-font-size: 16px;
+    --line-height: 1.8em;
+    --border-thickness: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#view {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#view {
+    background-color: var(--current-bg-color);
+    color: var(--current-text-color);
+    font-family: "DMMono-Regular";
+    line-height: var(--line-height);
+    font-size: var(--text-font-size);
+}
+
+#content {
+    padding-top: 4em;
+    padding-bottom: 8em;
+    margin: auto;
+    width: 70ch;
+}
+

@@ -8,14 +8,13 @@
 	<link rel="stylesheet" href="./src/styles/home.css">
 	{% include trees-horizontal-style.html %}
 	{% include trees-style.html %}
-	{% include theme-style.html %}
+	{% include themes-style.html %}
+	{% include general-style.html %}
 </head>
 <body>
-	<!--Adds the theme inputs-->
-	{% include theme-inputs.html %}
-
+	{% include themes-inputs.html %}
 	<div id="view">
-		{% include theme-menu.html %}
+		{% include themes.html %}
 		<div id="content">
 			<div id="welcome">
 					<h1>Hello there, I'm <em>Perseus</em>!</h1>

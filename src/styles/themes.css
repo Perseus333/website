@@ -1,4 +1,27 @@
-
+:root {
+    /*Grayscale Custom*/
+    --grayscale-bg-color: #111111;
+    --grayscale-text-color: #cacaca;
+    
+    /*Catppuccin Macchiato*/
+    --catppuccin-bg-color:  #24273a;
+    --catppuccin-text-color: #cad3f5;
+    
+    /*Gruvbox Dark*/
+    --gruvbox-bg-color: #282828;
+    --gruvbox-text-color: #ebdbb2;
+    
+    /*Everforest Dark*/
+    --everforest-bg-color: #2d353b;
+    --everforest-text-color: #d3c6aa;
+    
+    /*Terminal Aggressive*/
+    --terminal-bg-color: black;
+    --terminal-text-color: lime;
+    
+    --current-bg-color: var(--grayscale-bg-color);
+    --current-text-color: var(--grayscale-text-color);
+}
 
 #grayscale-theme:checked ~ #view {
     --current-bg-color: var(--grayscale-bg-color);
@@ -29,6 +52,10 @@
     transition: background-color 1s linear;
 }
 
+body > input {
+    display: none;
+}
+
 a:link, a:visited {
     color: var(--current-text-color);
 }
@@ -44,7 +71,6 @@ a:hover {
 #theme-menu {
     position: absolute;
     top: 1em;
-    left: 1em;
 }
 #theme-menu summary {
     padding-bottom: 1em;
@@ -52,6 +78,10 @@ a:hover {
 
 #theme-menu p {
     margin: 0;
+}
+
+.theme {
+    margin-right: 1em;
 }
 
 .theme:has(label[for="grayscale-theme"]) {
