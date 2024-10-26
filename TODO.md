@@ -21,6 +21,8 @@
 - [x] Add a sidebar
 - [x] Add 404 page
 - [ ] Add some more blogs
+  - [ ] Make katex work
+  - [ ] Style tables
 - [ ] Add blog homepage
 - [ ] Add support for RSS
 - [ ] Add a project

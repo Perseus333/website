@@ -8,18 +8,36 @@
 }
 
 #content {
-    place-items: center;
+    align-items: center;
     display: grid;
-    grid-template-rows: auto 1fr;
-    width: 70vw;
-    height: 25em;
+    width: 55vw;
+    height: 22em;
     border: var(--border-thickness) solid var(--current-text-color);
-    padding: 2em;
+    padding: 3em;
 }
 
 #welcome {
-    width: 40em;
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
+
+#message {
+    flex: 1;
+}
+
+#pfp-container {
+    margin-right: 2em;
+}
+
+#pfp-container img {
+    height: 10em;
+}
+
+
+#welcome > * {
+    align-self: center;
+}
+
 
 #cycle-interests:after {
     animation-name: cycle-interests;
