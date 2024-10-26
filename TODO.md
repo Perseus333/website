@@ -23,6 +23,7 @@
 - [ ] Add some more blogs
   - [ ] Make katex work
   - [ ] Style tables
+- [ ] Add again Javascript free
 - [ ] Add blog homepage
 - [ ] Add support for RSS
 - [ ] Add a project
