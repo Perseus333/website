@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+summary {
+  font-weight: bold;
+}
+
 /*
 START of code extracted from https://github.com/owickstrom/the-monospace-web
 

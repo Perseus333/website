@@ -10,7 +10,7 @@
 #content {
     place-items: center;
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: auto 1fr;
     width: 70vw;
     height: 25em;
     border: var(--border-thickness) solid var(--current-text-color);
