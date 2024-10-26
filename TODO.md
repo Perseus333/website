@@ -20,10 +20,12 @@
   - [x] fehmer
 - [x] Add a sidebar
 - [x] Add 404 page
-- [ ] Add some more blogs
-  - [ ] Make katex work
-  - [ ] Style tables
-- [ ] Add again Javascript free
+- [x] Add some more blogs
+  - [x] Style tables
+  - [x] Make katex work
+- [ ] Add a favicon
+- [ ] Add tags to blogs
+- [ ] Convert images to webp or aviff
 - [ ] Add blog homepage
 - [ ] Add support for RSS
 - [ ] Add a project

@@ -2,6 +2,10 @@ title: My Website
 description: A simple personal website
 baseurl: ""
 
+markdown: kramdown
+kramdown:
+  math_engine: katex
+
 exclude:
   - README.md
   - vendor/

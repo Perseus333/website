@@ -1,26 +1,37 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    {% include general-style.html %}
-    {% include themes-style.html %}   
-    {% include trees-style.html %}
-    {% include post-style.html %}
-  </head>
-  <body>
-    {% include themes-inputs.html %}
-    <div id="view">
-      <div id="sidebar">
-        {% include themes.html %}
-        <div id="trees-container">
-          {% include trees.html %}
-        </div>
-      </div>
-      <div id="content">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		{% include general-style.html %}
+		{% include themes-style.html %}   
+		{% include trees-style.html %}
+		{% include post-style.html %}
+		{% if page.katex %}
+		<!--KaTeX loading-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css">
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
+		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				renderMathInElement(document.body);
+			});
+		</script>
+		{% endif %}
+	</head>
+	<body>
+		{% include themes-inputs.html %}
+		<div id="view">
+			<div id="sidebar">
+				{% include themes.html %}
+				<div id="trees-container">
+					{% include trees.html %}
+				</div>
+			</div>
+			<div id="content">
+				<h1>{{ page.title }}</h1>
+				{{ content }}
+			</div>
+		</div>
+	</body>
 </html>

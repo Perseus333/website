@@ -32,6 +32,8 @@
     position: relative;
 }
 
+/*Markdown Element styling*/
+
 h1 {
     margin-bottom: 2em;
     border: var(--border-thickness) solid var(--current-text-color);
@@ -45,4 +47,24 @@ h2 {
 
 p {
     margin-bottom: 2em;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 4em auto;
+}
+
+table thead tr th {
+    border-bottom: var(--border-thickness) solid var(--current-text-color);   
+}
+
+table th:not(:last-child), 
+table td:not(:last-child) {
+    border-right: var(--border-thickness) solid var(--current-text-color);
+}
+
+table th,
+table td {
+    padding: 0 1em;
+    text-align: center;
 }
