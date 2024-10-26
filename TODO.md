@@ -21,6 +21,7 @@
 - [x] Add a sidebar
 - [x] Add 404 page
 - [ ] Add some more blogs
+- [ ] Theme memory (try to be through server not JS)
 - [ ] Add a hook
 - [ ] Optimize for speed
   - [ ] Preload fonts

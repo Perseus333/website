@@ -96,4 +96,8 @@
     100% {
         content: "idling";
     }
-}   
+}
+
+#home-tree {
+    display: none;
+}

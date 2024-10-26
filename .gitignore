@@ -2,3 +2,5 @@ Gemfile.lock
 /.jekyll-cache
 /_site
 .jekyll-metadata
+get-content.py
+global_output.txt
