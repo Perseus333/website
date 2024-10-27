@@ -23,7 +23,8 @@
 - [x] Add some more blogs
   - [x] Style tables
   - [x] Make katex work
-- [ ] Add a favicon
+- [x] Make homepage image .webp
+- [x] Add a favicon
 - [ ] Add tags to blogs
 - [ ] Convert images to webp or aviff
 - [ ] Add blog homepage

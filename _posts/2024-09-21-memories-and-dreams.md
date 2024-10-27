@@ -3,8 +3,6 @@ title: Memories and dreams
 layout: post
 ---
 
-# {{ page.title }}
-
 {2024-09-21}
 ## General Ideas
 
