@@ -30,6 +30,7 @@
 - [x] Add blog homepage
 - [x] Migrate posts to blog collections
 - [x] Set projects as a collection
+- [x] Complete /about pages
 - [ ] Add CC license in readme
 - [ ] Add support for RSS
 - [ ] Add a project

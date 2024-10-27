@@ -52,10 +52,19 @@ h1 {
 h2 {
     margin-top: 3em;
     border-bottom: var(--border-thickness) solid var(--current-text-color);
+    font-size: 1.75em;
 }
 
-p {
+h3 {
+    font-size: 1.5em;
+}
+
+p, ul, ol {
     margin-bottom: 2em;
+}
+
+hr {
+    border-bottom: var(--border-thickness) solid var(--current-text-color);
 }
 
 table {
