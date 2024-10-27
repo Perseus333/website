@@ -25,9 +25,9 @@
   - [x] Make katex work
 - [x] Make homepage image .webp
 - [x] Add a favicon
-- [ ] Add tags to blogs
-- [ ] Convert images to webp or aviff
-- [ ] Add blog homepage
+- [x] Add tags to blogs
+- [x] Convert images to webp
+- [x] Add blog homepage
 - [ ] Add support for RSS
 - [ ] Add a project
 - [ ] Add projects template

@@ -1,0 +1,19 @@
+---
+layout: post
+title: Posts Hub
+style: posts-hub
+---
+
+<div id="posts-list">
+    {% for post in site.posts %}
+      <div class="post">
+        <div class="post-header">
+            <a href="{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a>
+            <p class="tag">{{ post.tag }}</p>
+        </div>
+        <div class="post-content">
+            {{ post.excerpt }}
+        </div>
+      </div>
+    {% endfor %}
+</div>

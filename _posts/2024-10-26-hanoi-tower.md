@@ -1,10 +1,12 @@
 ---
-title: Hanoi & sum of powers
-layout: post
+title: "Hanoi & sum of powers"
+tag: "math"
 katex: True
 ---
 
 In this mini-essay I want to cover some interesting formulas relating the sum of the powers and how they relate to the Tower of Hanoi problem.
+
+<!--more-->
 
 ## Backstory
 

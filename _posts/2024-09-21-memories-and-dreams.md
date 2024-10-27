@@ -1,7 +1,11 @@
 ---
-title: Memories and dreams
-layout: post
+title: "Memories and dreams"
+tag: "philosophy"
 ---
+
+Did you enjoy a good draem if you don't remember it? Should we focus on creating or remembering memories? I will try to find an answer these in this post.
+
+<!--more-->
 
 {2024-09-21}
 ## General Ideas

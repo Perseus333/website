@@ -6,6 +6,14 @@ markdown: kramdown
 kramdown:
   math_engine: katex
 
+defaults:
+  -
+    scope:
+      path: "\_posts"
+    values:
+      layout: "posts"
+      excerpt_separator: <!--more-->
+
 exclude:
   - README.md
   - vendor/

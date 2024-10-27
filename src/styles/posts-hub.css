@@ -1,0 +1,9 @@
+.post {
+    margin-bottom: 4em;
+    border-left: var(--border-thickness) solid var(--current-text-color);
+    padding-left: 2em;
+}
+
+.post-content {
+    font-style: italic;
+}

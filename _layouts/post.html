@@ -7,6 +7,9 @@
 		{% include themes-style.html %}   
 		{% include trees-style.html %}
 		{% include post-style.html %}
+		{% if page.style %}
+			{% include {{page.style}}-style.html %}
+		{% endif %}
 		{% if page.katex %}
 		<!--KaTeX loading-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css">
@@ -30,6 +33,9 @@
 			</div>
 			<div id="content">
 				<h1>{{ page.title }}</h1>
+				{% if page.tag %}
+				<p class="tag">{{ page.tag }}</p>
+				{% endif %}
 				{{ content }}
 			</div>
 		</div>

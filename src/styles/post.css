@@ -32,6 +32,15 @@
     position: relative;
 }
 
+.tag::before {
+    content: "#";
+}
+
+.tag {
+    margin: inherit;
+    font-weight: bold;
+}
+
 /*Markdown Element styling*/
 
 h1 {
