@@ -1,6 +1,7 @@
 ---
 title: About this site
 layout: post
+permalink: /this-site
 ---
 
 This website aims to be an online-archive of my various projects, ideas and identity. 

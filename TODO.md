@@ -28,10 +28,14 @@
 - [x] Add tags to blogs
 - [x] Convert images to webp
 - [x] Add blog homepage
+- [x] Migrate posts to blog collections
+- [x] Set projects as a collection
+- [ ] Add CC license in readme
 - [ ] Add support for RSS
 - [ ] Add a project
 - [ ] Add projects template
 - [ ] Create projects homepage
+- [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Add a hook
 - [ ] Optimize for speed

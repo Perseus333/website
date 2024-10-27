@@ -1,0 +1,19 @@
+---
+layout: post
+title: Projects
+style: projects
+permalink: /projects/
+---
+
+<div id="posts-list">
+    {% for project in site.projects %}
+      <div class="project">
+        <div class="project-header">
+            <a href="{{ project.url }}">{{ project.title }} - {{project.date | date_to_string}}</a>
+        </div>
+        <div class="post-content">
+            {{ project.excerpt }}
+        </div>
+      </div>
+    {% endfor %}
+</div>

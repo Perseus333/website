@@ -1,5 +1,6 @@
 ---
 title: "Hanoi & sum of powers"
+date: 2024-10-26
 tag: "math"
 katex: True
 ---

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Posts Hub
-style: posts-hub
+title: Blog
+style: blog
+permalink: /blog/
 ---
 
 <div id="posts-list">
-    {% for post in site.posts %}
+    {% for post in site.blog %}
       <div class="post">
         <div class="post-header">
             <a href="{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a>

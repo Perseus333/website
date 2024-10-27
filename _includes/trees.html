@@ -1,25 +1,21 @@
 <div id="trees">
     <ul id="home-tree" class="tree">
         <details>
-            <summary><a href="/index.html">/</a></summary>
+            <summary><a href="/">/</a></summary>
         </details>
     </ul>
     <ul id="projects-tree" class="tree">
         <details {% if page.url == "/" %}open{% endif %}>
-            <summary>/src/projects</summary>
+            <summary>/projects</summary>
             <li>
                 <ul class="tree-parent">
+                    {% for project in site.projects limit:3 %}
                     <li>
-                        <a href="/404.html">Orbit Simulator</a>
+                        <a href="{{ project.url }}">{{ project.title }}</a>
                     </li>
+                    {% endfor %}
                     <li>
-                        <a href="/404.html">Live Rocket HUD</a>
-                    </li>
-                    <li>
-                        <a href="/404.html">TR Reimagined</a>
-                    </li>
-                    <li>
-                        <a href="/404.html">more...</a>
+                        <a href="/projects">more...</a>
                     </li>
                 </ul>
             </li>
@@ -27,16 +23,16 @@
     </ul>
     <ul id="blogs-tree" class="tree">
         <details {% if page.url == "/" %}open{% endif %}>
-            <summary>/_posts</summary>
+            <summary>/blog</summary>
             <li>
                 <ul class="tree-parent">
-                    {% for post in site.posts limit:3 %}
+                    {% for post in site.blog limit:3 %}
                     <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </li>
                     {% endfor %}
                     <li>
-                        <a href="/src/posts-hub.html">more...</a>
+                        <a href="/blog">more...</a>
                     </li>
                 </ul>
             </li>
@@ -44,17 +40,14 @@
     </ul>
     <ul id="about-tree" class="tree">
         <details {% if page.url == "/" %}open{% endif %}>
-            <summary>/src/about</summary>
+            <summary>/about</summary>
             <li>
                 <ul class="tree-parent">
                     <li>
-                        <a href="/404.html">bio</a>
+                        <a href="/about-me">about-me</a>
                     </li>
                     <li>
-                        <a href="/404.html">skills</a>
-                    </li>
-                    <li>
-                        <a href="/src/about/this-site.html">this-site</a>
+                        <a href="/this-site">this-site</a>
                     </li>
                 </ul>
             </li>

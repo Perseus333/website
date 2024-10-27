@@ -6,14 +6,33 @@ markdown: kramdown
 kramdown:
   math_engine: katex
 
+collections:
+  blog:
+    output: true
+  about:
+    output: true
+  projects:
+    output: true
+
 defaults:
   -
     scope:
-      path: "\_posts"
+      path: ""
+      type: "blog"
     values:
-      layout: "posts"
+      layout: "post"
       excerpt_separator: <!--more-->
+      permalink: /blog/:slug
+
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+      permalink: "/projects/:slug"
 
 exclude:
   - README.md
   - vendor/
+  - TODO.md
