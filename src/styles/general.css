@@ -38,3 +38,8 @@ body {
     margin: auto;
 }
 
+#site-info {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
