@@ -5,11 +5,14 @@ style: blog
 permalink: /blog/
 ---
 
+<div>
+  <a href="/feed/blog.xml">Atom/RSS Feed</a>
+</div>
 <div id="posts-list">
     {% for post in site.blog %}
       <div class="post">
         <div class="post-header">
-            <a href="{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a>
+            <h3><a href="{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a></h3>
             <p class="tag">{{ post.tag }}</p>
         </div>
         <div class="post-content">

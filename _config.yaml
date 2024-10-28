@@ -1,10 +1,20 @@
-title: My Website
+title: Perseus' Website
 description: A simple personal website
 baseurl: ""
+url: "perseus333.github.io"
+author: Perseus
 
 markdown: kramdown
 kramdown:
   math_engine: katex
+
+plugins:
+  - jekyll-feed
+
+feed:
+  collections:
+      blog:
+        tags: true
 
 collections:
   blog:

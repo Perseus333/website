@@ -31,18 +31,18 @@
 - [x] Migrate posts to blog collections
 - [x] Set projects as a collection
 - [x] Complete /about pages
-- [ ] Add CC license in readme
-- [ ] Add support for RSS
+- [x] Add CC license in readme
+- [x] Add support for RSS
+- [ ] Add "JavaScript Free"
+- [ ] Add Github and RSS Feed links in all pages 
 - [ ] Add a project
 - [ ] Add projects template
 - [ ] Create projects homepage
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
-- [ ] Add a hook
 - [ ] Optimize for speed
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)
   - [ ] Lighthouse the site
-  - [ ] Maybe port it to svelte ???
 - [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)
 - [ ] umami analytics
