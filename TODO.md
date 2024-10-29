@@ -33,13 +33,13 @@
 - [x] Complete /about pages
 - [x] Add CC license in readme
 - [x] Add support for RSS
-- [ ] Add "JavaScript Free"
-- [ ] Add Github and RSS Feed links in all pages 
+- [x] Add Github and RSS Feed links in all pages 
 - [ ] Add a project
 - [ ] Add projects template
 - [ ] Create projects homepage
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
+- [ ] Add "JavaScript Free"
 - [ ] Optimize for speed
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)
