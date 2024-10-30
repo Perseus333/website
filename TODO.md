@@ -34,9 +34,9 @@
 - [x] Add CC license in readme
 - [x] Add support for RSS
 - [x] Add Github and RSS Feed links in all pages 
-- [ ] Add a project
-- [ ] Add projects template
-- [ ] Create projects homepage
+- [x] Add a project
+- [x] Add projects template
+- [x] Create projects homepage
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Add "JavaScript Free"

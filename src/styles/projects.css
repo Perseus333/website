@@ -1,0 +1,30 @@
+#content {
+    width: 100ch;
+}
+
+#projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100ch;
+    gap: 5ch;
+}
+
+.project {
+    border: var(--border-thickness) solid var(--current-text-color);
+    max-width: 45ch;
+    max-height: 45ch;
+    padding: 1em;
+}
+
+.title {
+    margin-bottom: 1em;
+}
+.title a {
+    font-size: xx-large;
+}
+
+
+.thumbnail {
+    width: 43ch;
+    margin-bottom: 1em;
+}

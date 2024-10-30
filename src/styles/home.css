@@ -10,7 +10,7 @@
 #content {
     align-items: center;
     display: grid;
-    width: 55vw;
+    width: 60vw;
     height: 22em;
     border: var(--border-thickness) solid var(--current-text-color);
     padding: 3em;
@@ -30,7 +30,8 @@
 }
 
 #pfp-container img {
-    height: 10em;
+    height: 11rem;
+    width: 11rem;
 }
 
 

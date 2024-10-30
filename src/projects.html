@@ -5,14 +5,17 @@ style: projects
 permalink: /projects/
 ---
 
-<div id="posts-list">
+<div id="projects-list">
     {% for project in site.projects %}
       <div class="project">
         <div class="project-header">
-            <a href="{{ project.url }}">{{ project.title }} - {{project.date | date_to_string}}</a>
+            <img class="thumbnail" src="/src/assets/{{ project.slug }}.webp">
+            <div class="title">
+              <a href="{{ project.url }}">{{ project.title }}</a>
+            </div>
         </div>
-        <div class="post-content">
-            {{ project.excerpt }}
+        <div class="project-content">
+            {{ project.description }}
         </div>
       </div>
     {% endfor %}
