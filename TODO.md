@@ -46,3 +46,12 @@
   - [ ] Lighthouse the site
 - [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)
 - [ ] umami analytics
+- [ ] Add website layouts to customize (infinite work)
+
+---
+Future Projects:
+- [ ] Some more GitHub projects
+- [ ] Rocket HUD
+
+Future Blogs:
+- [ ] On epistocracy
