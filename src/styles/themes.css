@@ -71,6 +71,7 @@ a:hover {
 #theme-menu {
     position: absolute;
     top: 1em;
+    z-index: 999;
 }
 #theme-menu summary {
     padding-bottom: 1em;

@@ -43,3 +43,11 @@ body {
     bottom: 1em;
     left: 1em;
 }
+
+details > summary {
+    list-style-type: '> ';
+}
+
+details[open] > summary {
+    list-style-type: '↪';
+}
