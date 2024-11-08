@@ -4,7 +4,9 @@ date: 2024-10-30
 tag: "politics"
 ---
 
-This post intends to explore a new voting system. One where the voters are informed about the outcomes of their decisions.
+This post intends to explore a new look into voting systems. One where the voters are informed about the outcomes of their decisions through education.
+
+<!--more-->
 
 People like to claim that democracy means that everyone has a say in government decisions but that's not entirely the case. We need to realize that democracy is already limited: by age. Now, the reasoning behind this may seem obvious: because a child is considered to be immature in contrast to the adults. But what if that were not the case? What if adults also could be immature and not vote according to what benefits the country the most?
 
