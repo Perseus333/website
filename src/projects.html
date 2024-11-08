@@ -6,7 +6,7 @@ permalink: /projects/
 ---
 
 <div id="projects-list">
-    {% for project in site.projects %}
+    {% for project in site.projects reversed%}
       <div class="project">
         <div class="project-header">
             <img class="thumbnail" src="/src/assets/{{ project.slug }}.webp">

@@ -9,7 +9,7 @@
             <summary>/projects</summary>
             <li>
                 <ul class="tree-parent">
-                    {% for project in site.projects limit:3 %}
+                    {% for project in site.projects reversed limit:3 %}
                     <li>
                         <a href="{{ project.url }}">{{ project.title }}</a>
                     </li>
@@ -26,7 +26,7 @@
             <summary>/blog</summary>
             <li>
                 <ul class="tree-parent">
-                    {% for post in site.blog limit:3 %}
+                    {% for post in site.blog reversed limit:3 %}
                     <li>
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </li>
