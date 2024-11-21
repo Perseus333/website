@@ -37,6 +37,8 @@
 - [x] Add a project
 - [x] Add projects template
 - [x] Create projects homepage
+- [x] umami analytics
+- [ ] Add cards
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Add "JavaScript Free"
@@ -45,13 +47,14 @@
   - [ ] Preload styles selectively (hardcoded)
   - [ ] Lighthouse the site
 - [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)
-- [ ] umami analytics
 - [ ] Add website layouts to customize (infinite work)
 
 ---
 Future Projects:
-- [ ] Some more GitHub projects
+- [x] Some more GitHub projects
 - [ ] Rocket HUD
 
 Future Blogs:
-- [ ] On epistocracy
+- [x] On epistocracy
+- [x] On purpose
+- [ ] The Colemak experience

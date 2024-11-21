@@ -17,6 +17,8 @@ This website was created using [Jekyll](https://jekyllrb.com/) on [GitHub Pages]
 
 You can find the repository of this website [on my GitHub repo](https://github.com/Perseus333/perseus333.github.io).
 
+You can find the analytics of the website [on the umami dashboard](https://cloud.umami.is/share/WFgcWwn2qH6fhT2c/perseus333.github.io).
+
 ## Design Philosophy
 
 I'm still deciding on it as this website progresses but for now this are my guidelines:
