@@ -87,3 +87,15 @@ table td {
     padding: 0 1em;
     text-align: center;
 }
+
+/*For the mobile nerds*/
+@media (max-width: 940px) {
+    #sidebar {
+        display: none;
+    }
+    #content {
+        max-width: 90vw;
+        font-size: var(--mobile-font-size);
+        padding: -1em;
+    }
+}

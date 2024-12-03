@@ -5,6 +5,7 @@
 
 :root {
     --text-font-size: 18px;
+    --mobile-font-size: 14px;
     --line-height: 1.8em;
     --border-thickness: 2px;
 }
@@ -50,4 +51,8 @@ details > summary {
 
 details[open] > summary {
     list-style-type: '↪';
+}
+
+code {
+    text-wrap: auto;
 }
