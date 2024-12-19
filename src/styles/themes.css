@@ -1,10 +1,12 @@
 :root {
+    --regular-font: "DMMono-Regular";
+    
     /*Grayscale Custom*/
     --grayscale-bg-color: #111111;
     --grayscale-text-color: #cacaca;
     
     /*Catppuccin Macchiato*/
-    --catppuccin-bg-color:  #24273a;
+    --catppuccin-bg-color:  #1e2030;
     --catppuccin-text-color: #cad3f5;
     
     /*Gruvbox Dark*/
@@ -19,8 +21,8 @@
     --terminal-bg-color: black;
     --terminal-text-color: lime;
     
-    --current-bg-color: var(--grayscale-bg-color);
-    --current-text-color: var(--grayscale-text-color);
+    --current-bg-color: var(--catppuccin-bg-color);
+    --current-text-color: var(--catppuccin-text-color);
 }
 
 #grayscale-theme:checked ~ #view {
@@ -49,6 +51,7 @@
 #terminal-theme:checked ~ #view {
     --current-bg-color: var(--terminal-bg-color);
     --current-text-color: var(--terminal-text-color);
+    --regular-font: "IBM_VGA";
     transition: background-color 1s linear;
 }
 
