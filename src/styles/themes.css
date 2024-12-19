@@ -76,7 +76,8 @@ a:hover {
     top: 1em;
     z-index: 999;
 }
-#theme-menu summary {
+
+#theme-menu {
     padding-bottom: 1em;
 }
 
@@ -87,6 +88,20 @@ a:hover {
 .theme {
     margin-right: 1em;
 }
+
+/*Manages the animation dropdown*/
+
+.details-dropdown {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 300ms ease-out;
+}
+
+#theme-menu-details[open] + .details-dropdown {
+    max-height: 10em;
+    transition: max-height 300ms ease-out;
+}
+
 
 .theme:has(label[for="grayscale-theme"]) {
     background-color: var(--grayscale-bg-color);

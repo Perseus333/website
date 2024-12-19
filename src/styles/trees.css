@@ -18,6 +18,19 @@
 
 summary {
   font-weight: bold;
+  cursor: pointer;
+}
+
+details + li {
+  max-height: 0px;
+  overflow: hidden;
+  width: 0;
+}
+
+details[open] + li {
+  max-height: 200px;
+  width: fit-content;
+  transition: max-height 250ms ease-out;
 }
 
 /*

@@ -7,65 +7,65 @@
     <ul id="projects-tree" class="tree">
         <details>
             <summary>/projects</summary>
-            <li>
-                <ul class="tree-parent">
-                    {% for project in site.projects reversed limit:3 %}
-                    <li>
-                        <a href="{{ project.url }}">{{ project.title }}</a>
-                    </li>
-                    {% endfor %}
-                    <li>
-                        <a href="/projects">more...</a>
-                    </li>
-                </ul>
-            </li>
         </details>
+        <li>
+            <ul class="tree-parent">
+                {% for project in site.projects reversed limit:3 %}
+                <li>
+                    <a href="{{ project.url }}">{{ project.title }}</a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href="/projects">more...</a>
+                </li>
+            </ul>
+        </li>
     </ul>
     <ul id="blogs-tree" class="tree">
         <details>
             <summary>/blog</summary>
-            <li>
-                <ul class="tree-parent">
-                    {% for post in site.blog reversed limit:3 %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {% endfor %}
-                    <li>
-                        <a href="/blog">more...</a>
-                    </li>
-                </ul>
-            </li>
         </details>
+        <li>
+            <ul class="tree-parent">
+                {% for post in site.blog reversed limit:3 %}
+                <li>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href="/blog">more...</a>
+                </li>
+            </ul>
+        </li>
     </ul>
     <ul id="about-tree" class="tree">
         <details>
             <summary>/about</summary>
-            <li>
-                <ul class="tree-parent">
-                    <li>
-                        <a href="/about-me">about-me</a>
-                    </li>
-                    <li>
-                        <a href="/this-site">this-site</a>
-                    </li>
-                </ul>
-            </li>
         </details>
+        <li>
+            <ul class="tree-parent">
+                <li>
+                    <a href="/about-me">about-me</a>
+                </li>
+                <li>
+                    <a href="/this-site">this-site</a>
+                </li>
+            </ul>
+        </li>
     </ul>
     <ul id="contact-tree" class="tree">
         <details>
             <summary>/contact</summary>
-            <li>
-                <ul class="tree-parent">
-                    <li>
-                        <a href="mailto:perseuslynx333@gmail.com">e-mail</a>
-                    </li>
-                    <li>
-                        <a href="discord://-/users/581902699247829046">discord</a>
-                    </li>
-                </ul>
-            </li>
         </details>
+        <li>
+            <ul class="tree-parent">
+                <li>
+                    <a href="mailto:perseuslynx333@gmail.com">e-mail</a>
+                </li>
+                <li>
+                    <a href="discord://-/users/581902699247829046">discord</a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </div>
