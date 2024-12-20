@@ -1,4 +1,10 @@
-#trees {
-    grid-template-columns: auto auto auto auto;
-    align-self: flex-end;
+@media (min-width: 940px) {
+    #trees {
+        grid-template-columns: auto auto auto auto;
+        align-self: flex-end;
+    }
+
+    #trees {
+        padding: 0 2em;
+    }
 }

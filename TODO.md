@@ -39,6 +39,9 @@
 - [x] Create projects homepage
 - [x] umami analytics
 - [ ] Make readable for mobile
+  - [x] Sidebar
+  - [x] Index
+  - [ ] Projects Page
 - [ ] Add cards
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
