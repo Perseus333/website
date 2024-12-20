@@ -9,6 +9,10 @@
     padding-bottom: 8em;
 }
 
+#mobile-sidebar-toggle {
+    display: none;
+}
+
 #sidebar {
     position: sticky;
     top: 0em;
@@ -95,12 +99,42 @@ table td {
 
 /*For the mobile nerds*/
 @media (max-width: 940px) {
-    #sidebar {
-        display: none;
+    #view {
+        flex-direction: column;
     }
+
+    #mobile-sidebar-toggle {
+        display: block;
+        margin-left: 1em;
+    }
+
+    
+    #mobile-sidebar-toggle[open] + #sidebar {
+        max-height: 100vh;
+    }
+
+    #sidebar {
+        max-height: 0;
+        overflow: hidden;
+        max-width: 100vw;
+        position: relative;
+        height: fit-content;
+        grid-template-rows: auto auto auto;
+    }
+
+    #site-info {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+    #trees ul {
+        margin: 0;
+    }
+
     #content {
         max-width: 90vw;
         font-size: var(--mobile-font-size);
-        padding: -1em;
+        padding-top: 1em;
     }
 }
