@@ -1,19 +1,19 @@
 #content {
-    width: 100ch;
+    max-width: 100%;
+    width: initial;
+    padding: 1em;
 }
 
 #projects-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100ch;
-    gap: 5ch;
+    width: initial;
+    gap: 1rem;
 }
 
 .project {
     border: var(--border-thickness) solid var(--current-text-color);
-    max-width: 45ch;
-    max-height: 45ch;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .title {
@@ -25,6 +25,26 @@
 
 
 .thumbnail {
-    width: 43ch;
+    width: 100%;
     margin-bottom: 1em;
+}
+
+@media (max-width: 940px) {
+    
+    #projects-list {
+        display: block;
+        width: 100%;
+    }
+
+    .project {
+        padding: 0;
+        max-height: none;
+        border: none;
+        margin-bottom: 4em;
+    }
+
+    .thumbnail {
+        width: 100%;
+    }
+
 }

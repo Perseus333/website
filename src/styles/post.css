@@ -16,7 +16,7 @@
 #sidebar {
     position: sticky;
     top: 0em;
-    left: 1em;
+    padding-left: 1em;
     display: grid;
     grid-template-rows: 10em auto 10em;
     height: 100vh;
