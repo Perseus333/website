@@ -60,21 +60,38 @@ h2 {
     font-size: 1.75em;
 }
 
+h3::before {
+    content: "> ";
+}
+
 h3 {
+    margin-top: 3em;
     font-size: 1.5em;
 }
 
-p:not(.tag) {
+p:not(.tag),
+li,
+a {
     font-family: var(--paragraph-font);
-    font-size: 20px;
 }
 
-p, ul, ol {
+p, #content > ul, #content > ol {
+    font-size: 20px;
     margin-bottom: 2em;
 }
 
 hr {
     border-bottom: var(--border-thickness) solid var(--current-text-color);
+}
+
+pre {
+    border: var(--border-thickness) solid var(--current-text-color);
+    padding: 1em;
+}
+
+code {
+    color: var(--current-secondary-color);
+    font-family: var(--regular-font);
 }
 
 table {

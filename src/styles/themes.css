@@ -4,53 +4,64 @@
     /*Grayscale Custom*/
     --grayscale-bg-color: #111111;
     --grayscale-text-color: #cacaca;
+    --grayscale-secondary-color: #ffffff;
     
     /*Catppuccin Macchiato*/
-    --catppuccin-bg-color:  #1e2030;
+    --catppuccin-bg-color: #1e2030;
     --catppuccin-text-color: #cad3f5;
-    
+    --catppuccin-secondary-color: #f0c6c6; 
+
     /*Gruvbox Dark*/
     --gruvbox-bg-color: #282828;
     --gruvbox-text-color: #ebdbb2;
+    --gruvbox-secondary-color: #fe8019;
     
     /*Everforest Dark*/
     --everforest-bg-color: #2d353b;
     --everforest-text-color: #d3c6aa;
+    --everforest-secondary-color: #a7c080;
     
     /*Terminal Aggressive*/
     --terminal-bg-color: black;
     --terminal-text-color: lime;
+    --terminal-secondary-color: lime;
     
     --current-bg-color: var(--catppuccin-bg-color);
     --current-text-color: var(--catppuccin-text-color);
+    --current-secondary-color: var(--catppuccin-secondary-color);
 }
 
 #grayscale-theme:checked ~ #view {
     --current-bg-color: var(--grayscale-bg-color);
     --current-text-color: var(--grayscale-text-color);
+    --current-secondary-color: var(--grayscale-secondary-color);
     transition: background-color 1s linear;
 }
 
 #catppuccin-theme:checked ~ #view {
     --current-bg-color: var(--catppuccin-bg-color);
     --current-text-color: var(--catppuccin-text-color);
+    --current-secondary-color: var(--catppuccin-secondary-color);
     transition: background-color 1s linear;
 }
 
 #gruvbox-theme:checked ~ #view {
     --current-bg-color: var(--gruvbox-bg-color);
     --current-text-color: var(--gruvbox-text-color);
+    --current-secondary-color: var(--gruvbox-secondary-color);
     transition: background-color 1s linear;
 }
 
 #everforest-theme:checked ~ #view {
     --current-bg-color: var(--everforest-bg-color);
     --current-text-color: var(--everforest-text-color);
+    --current-secondary-color: var(--everforest-secondary-color);
     transition: background-color 1s linear;
 }
 #terminal-theme:checked ~ #view {
     --current-bg-color: var(--terminal-bg-color);
     --current-text-color: var(--terminal-text-color);
+    --current-secondary-color: var(--terminal-secondary-color);
     --regular-font: "IBM_VGA";
     transition: background-color 1s linear;
 }
@@ -122,4 +133,5 @@ a:hover {
 .theme:has(label[for="terminal-theme"]) {
     background-color: var(--terminal-bg-color);
     color: var(--terminal-text-color);
+    font-family: "IBM_VGA";
 }

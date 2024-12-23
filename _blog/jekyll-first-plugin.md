@@ -69,14 +69,17 @@ It's helpful if you keep version control in your project so running: `git init` 
 Jekyll plugins usually have a structure similar to this one, and for best practices you should follow it:
 
 ```bash
-|   jekyll-plugin-name.gemspec
-|   Gemfile
-|  
-\---lib
-    |   jekyll-plugin-name.rb
-    |  
-    \---jekyll
-        plugin-name.rb                  
+│   Gemfile
+│   jekyll-math-svg.gemspec
+│
+└───lib
+    │   jekyll-plugin-name.rb
+    │
+    ├───jekyll
+    │       plugin-name.rb
+    │
+    └───jekyll-plugin-name
+            version.rb                
 ```
 
 Once you have recreated the file tree, you can verify it by running:

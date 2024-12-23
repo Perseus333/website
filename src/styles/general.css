@@ -23,6 +23,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--current-bg-color);
 }
 
 body {
