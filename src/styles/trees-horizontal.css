@@ -1,6 +1,6 @@
 @media (min-width: 940px) {
     #trees {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         align-self: flex-end;
     }
 

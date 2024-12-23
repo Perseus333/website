@@ -21,10 +21,18 @@ summary {
   cursor: pointer;
 }
 
+details > summary {
+  list-style-type: '> ';
+}
+
+details[open] > summary {
+  list-style-type: '↪';
+}
+
 details + li {
   max-height: 0px;
   overflow: hidden;
-  width: 0;
+  transition: max-height 250ms ease-out;
 }
 
 details[open] + li {
@@ -32,6 +40,7 @@ details[open] + li {
   width: fit-content;
   transition: max-height 250ms ease-out;
 }
+
 
 /*
 START of code extracted from https://github.com/owickstrom/the-monospace-web
