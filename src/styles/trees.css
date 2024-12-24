@@ -26,7 +26,7 @@ details > summary {
 }
 
 details[open] > summary {
-  list-style-type: '↪';
+  list-style-type: '↪ ';
 }
 
 details + li {
