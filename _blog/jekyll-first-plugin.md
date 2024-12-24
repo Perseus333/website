@@ -4,13 +4,26 @@ date: 2024-12-23
 tag: "programming"
 ---
 
-You may want to create your own Jekyll plugin, however, there isn't a complete, modern and beginner friendly guide on how to create a Jekyll plugin. This guide is aimed towards people who haven't ever created a jekyll plugin and don't know Ruby. This isn't just a walkthrough of all the things that you need to create your plugin but also to understand how they work. By understanding the fundamentals, and the why of everything you will save yourself many headaches when debugging.
+You may want to create your own Jekyll plugin, however, there isn't a complete, modern and beginner friendly guide on how to create a Jekyll plugin. This guide is aimed towards people who haven't ever created a Jekyll plugin and don't know Ruby. This isn't just a walkthrough of all the things that you need to create your plugin but also to understand how they work. By understanding the fundamentals, and the why of everything you will save yourself many headaches when debugging.
 
 <!--more-->
 
-Depending on your use case you may want to create your plugin as a gem so that it can be published on Ruby repository, or if it's just simpler, creating a ruby file and placing it in `_plugins` directory on your project will automatically run it.
+**What is a plugin?**
+A plugin is an extension of a program's (Jekyll's) core features.
 
-For this tutorial however, I will go through how to create a plugin using Ruby's gems.
+**Why would I want to create one?**
+You could create one if you have a necessity that isn't covered by any of the existing plugins or if you just want to learn Ruby.
+
+**What can I expect from this guide?**
+This guide will be an explained walkthrough of the creation, maintenance and publishing of a basic plugin. The program itself won't do anything useful, but it will serve as a solid foundation for whichever plugin idea you have. This guide aims to cover the maximum common ground between all plugins, and explain in great detail how they work. 
+
+In the future, however, I will create a more specific guide explaining the creation and how my plugin works.
+
+Depending on your use case you may want to create your plugin as a gem so it can be published on the Ruby Gems repository, or if it's just simpler, creating a ruby file and placing it in `_plugins` directory on your project will automatically run it. 
+
+Now is a good time to explain what a ruby gem is: It's a package of code that adds functionality to a Ruby project. It's a sort of .zip file for a library. That's why Jekyll plugins are shared as gems; because it's the easiest way to share ruby libraries. They are meant to be shared from the Ruby Gems repository, however that's not necessary.
+
+For this tutorial however, I will go through how to create the base for a plugin using Ruby's gems.
 
 **Table of contents**
 - [Choosing a name for Your Plugin](#choosing-a-name-for-your-plugin)
@@ -39,9 +52,10 @@ Additionally, since you are building a Jekyll plugin it's a good idea to prepend
 
 `jekyll-plugin-name`
 
-Where `plugin-name` is whatever, you want your name to be.
+Where `plugin-name` is whatever you want your plugin name to be.
 
-In theory in Ruby dashes (`-`) means that whatever comes after the dash comes from a module from before the dash. Like here, `jekyll-plugin-name` means that `plugin-name` comes from the module `jekyll`.  Underscores (`_`) on the other hand mean that there are multiple words in your name. So technically your plugin should be like so: `jekyll-plugin_name`. However, that looks very weird, and I haven't seen it much in Jekyll plugins, so it's preferable with just dashes.
+**A bit of contradictory background**
+In theory, according to the Ruby documentation, dashes (`-`) mean that whatever comes after the dash comes from a module from before the dash. Like here: `jekyll-plugin-name` means that `plugin-name` comes from the module `jekyll`.  Underscores (`_`) on the other hand mean that there are multiple words in your name. So technically your plugin should be like so: `jekyll-plugin_name`. However, that looks very weird, and I haven't seen it on any Jekyll plugins, so it's preferable with just dashes.
 
 Below is a list of some arbitrary list of popular Jekyll plugins from [Awesome Jekyll Plugins [github.com]](https://github.com/planetjekyll/awesome-jekyll-plugins) and their gem names so that you can get a better picture of how they are named:
 
@@ -64,22 +78,19 @@ For more information about naming conventions check the official Ruby docs here:
 
 The first thing that you need to do is create a directory anywhere and that will be the one that you will use to store your gem in.
 
-It's helpful if you keep version control in your project so running: `git init` might be a good idea.
+It's helpful if you keep version control in your project so running: `git init` and commiting on every semi-important change might be a good idea.
 
-Jekyll plugins usually have a structure similar to this one, and for best practices you should follow it:
+Jekyll plugins usually have a structure similar to this one, and for best practices you should follow it. The why for this structure and what each file does will be explained later in this guide.
 
 ```bash
-│   Gemfile
-│   jekyll-math-svg.gemspec
-│
-└───lib
-    │   jekyll-plugin-name.rb
-    │
-    ├───jekyll
-    │       plugin-name.rb
-    │
-    └───jekyll-plugin-name
-            version.rb                
+|   jekyll-plugin-name.gemspec
+|   Gemfile
+|  
+\---lib
+    |   jekyll-plugin-name.rb
+    |  
+    \---jekyll
+        plugin-name.rb                  
 ```
 
 Once you have recreated the file tree, you can verify it by running:
@@ -97,34 +108,34 @@ In the following sections I will explain in greater details what each of those f
 
 ## Creating Your Gem Specification Reference
 
-The gemspec file is like the configuration file of your gem. Here, the gem builder will know how to combine the files, but also get a description of the gem. Here's what a basic .gemspec file might look like:
+The .gemspec file is like the configuration file of your gem. Here, the gem builder will know how to combine the files, but also get a description of the gem. Here's what a basic .gemspec file might look like:
 
 ```Ruby
 Gem::Specification.new do |s|
-    s.name = 'plugin-name-svg'
+    s.name = 'jekyll-plugin-name'
     s.version = '0.0.1'
     s.license = 'MIT'
     s.summary = "Brief description of your plugin"
     s.description = "A lengthier description. Here you can explain in general how it works, what it depends on and what purpose it fulfils in more detail."
     s.authors = ['yourName']
     s.email = 'yourEmail@liamg.com'
-    s.homepage = 'a link to the repo of your project'
+    s.homepage = 'https://github.com/username/jekyll-plugin-name'
 
     s.files = Dir["lib/**/*"]
 
     s.required_ruby_version = ">= 3.0.0"
 
-    s.add_dependency "jekyll", "~> 3.10.0"
+    s.add_dependency "jekyll", ">= 3.5.0"
 end
 ```
 
-The gemspec will need at least `authors`, `files`, `name`, `summary` and `version` to be valid. However, since this is a jekyll plugin, `add_dependency` is necessary interact with Jekyll.
+The gemspec will need at least `authors`, `files`, `name`, `summary` and `version` to be valid. However, since this is a Jekyll plugin, `add_dependency` is necessary interact with Jekyll.
 
 Most of the lines are self-explanatory, like name, summary and author. However, let's take a look at some that might not be as obvious.
 
-The `files` means which files should the program keep when building the gem.  In the example I used `Dir["lib/**/*]` which is just a ruby command that will include all the directories inside `lib`. `Dir` is the command, and `lib/**/*` is the regex of sorts. This saves you time and headaches of manually typing in all files that you have inside.
+The `files` means which files should the program keep when building the gem.  In the example I used `Dir["lib/**/*]` which is a ruby command that will include all the directories inside the `lib` directory. `Dir` is a class that tells ruby that you are specifying a directory, and `lib/**/*` is the regex of sorts. This saves you time and headaches of manually typing in all files that you have inside.
 
-The `required_ruby_version` should be the lowest version of ruby that you are willing to support. As for which version is the best, you will need to look it up. But if you run:
+The `required_ruby_version` should be the lowest version of ruby that you are willing to support. As for which minimum version is the best, you will need to test it. But if you run:
 
 ```Ruby
 ruby -v
@@ -132,9 +143,9 @@ ruby -v
 
 You will know the current version of Ruby that you are using. If you program works in that version, there is a good chance that it works in the latest major update. In the case of the example, I was running Ruby version 3.3.5, however this program should work from version 3.0.0 onwards.
 
-To create a jekyll plugin it is necessary to have jekyll as a dependency. This is why you need the `add_depencency`. In the same fashion as the `required_ruby_version` you also need to include the minimum Jekyll version that you plugin supports, and you can usually go down a couple of versions older that the current one. Although make sure to test it to see if something breaks.
+To create a Jekyll plugin it is necessary to have Jekyll as a dependency. This is why you need the `add_depencency`. In the same fashion as the `required_ruby_version` you also need to include the minimum Jekyll version that you plugin supports, and you can usually go down a couple of versions older that the current one. Although make sure to test it to see if something breaks.
 
-To know the Jekyll version that you are using in your page, you can look into the `Gemfile.lock` file inside of your page root directory. There, you should be able to see the version of Jekyll in a line like so:
+To know the Jekyll version that you are using in your page, you can look into the `Gemfile.lock` file inside of your Jekyll site project root directory (assuming that you have a working Jekyll site). There, you should be able to see the version of Jekyll in a line like so:
 
 ```ruby
 ...
@@ -152,7 +163,7 @@ There are, however, many more things that you can add to your gem specification 
 
 ## Configuring the Gemfile
 
-You might have seen that there is a file in the file tree without any extensions called `Gemfile`, this is the way that the gem manages its dependencies.
+You might have seen that there is a file in the file tree without any file extensions called `Gemfile`, this is the way that the gem manages its dependencies.
 
 A typical Gemfile might look like this:
 
@@ -166,15 +177,17 @@ gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 
 Let's go line by line looking at what this does:
 
-`source "source "https://rubygems.org"` means that whatever dependencies we specify in this file we will grab them from the RubyGems repository. This is where most of the gems are hosted and can easily be installed by just appending them into the Gemfile. This line is technically not needed as it will default to that repository, but it helps explain everything else.
+`source "https://rubygems.org"` means that whatever dependencies we specify in this file we will grab them from the Ruby Gems repository. This is where most of the gems are hosted and can easily be installed by appending them into the Gemfile. This line is technically not needed as it will default to that repository, but it helps explain everything else.
 
-`gemspec` is where it will grab the dependencies and their versions from.
+`gemspec` pulls the dependencies and their versions from the `.gemspec` file.
 
-`gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]` Is the way that we install Jekyll from the source. Everything after the coma, is just a way to tell the program to use the version specified in the .gemspec file in case that it is specified.
+`gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]` Is the way that we add Jekyll as a dependency. Without this the plugin won't work. The version is conditional on being specified, but if it's not, it defaults to the one described in the `.gemspec` file. That's why we needed the previous `gemspec` line before.
 
 ## Writing a Dummy Program
 
-The plugin will need a main program which to run. To write the program you will need to learn Ruby, however, the good thing about Ruby is that you don't need to know the language to read it. To start just create a `plugin-name.rb` file inside of your `/lib/jekyll` directory. There you can type in something like this:
+The plugin will need a main program which to run. To write the program you will need to learn Ruby, however, the good thing about Ruby is that you don't need to know the language to read it. To start, create a `plugin-name.rb` file inside of your `/lib/jekyll` directory. 
+
+For this example and for this guide, the plugin will be the one described below. All it will do is log that is is being run.
 
 ```Ruby
 module Jekyll
@@ -194,9 +207,9 @@ module Jekyll
 end
 ```
 
-But what does any of this mean?
+Now let's break it down:
 
-For starters you will need to specify what type of plugin you are creating. Depending on the type of plugin that you are building you will need to change the `Generator` here for `Command`, `Hook` or something else. Just think it like different use cases require different configurations for Jekyll. If you want to generate stuff you will need to use the Generator type. If you need to execute custom commands, create a Command type.
+For starters you need to specify what type of plugin you are creating. Depending on the type of plugin that you are building you will need to change the `Generator` here for `Command`, `Hook` or something else. Think it like different use cases require different configurations for Jekyll. If you want to generate stuff you will need to use the Generator type. If you need to execute custom commands, use the Command type.
 
 For more information look into the Jekyll Docs to know exactly what each of the options does: [Your first plugin [jekyllrb.com]](https://jekyllrb.com/docs/plugins/your-first-plugin/).
 
@@ -205,20 +218,20 @@ module Jekyll
     class PluginName < Jekyll::Generator
 ```
 
-Here we are creating a Generator plugin so Jekyll will run `def generate(site)` inside here, we can place all the functions that we need for the program to run. For now, just logging some debug info is enough to know if the plugin is running.
+Here we are creating a Generator plugin so Jekyll will run `def generate(site)` inside here, we can place all the functions that we need for the program to run. If you are creating a generator type program, you will need to include this function. You cannot change it's name or remove it's argument. For now, just logging some debug info is enough to know if the plugin is running.
 
 To log the debug info, we run the `Jekyll.logger.info` command. This should log the messages when we build the site with the `--verbose` tag.
 
-However, logging that requires you to run the `bundle exec jekyll serve --verbose` with the verbose tag. And that is suboptimal. A more obvious way to know if the program is running is to crash it. This will throw an error that will fill most of the terminal so we should be able to see clearly that the plugin is being loaded. We can do that simply by using:
+However, logging messages requires you to run the `bundle exec jekyll serve --verbose` with the verbose tag. That is perfectly fine but you might miss it. A more obvious way to know if the program is running is to crash it. This will throw an error that will fill most of the terminal so we should be able to see clearly that the plugin is being loaded. Note that this is not what should be used for logging ever, but in this case it's the easiest way to know that the plugin is being run. Remember to delete it later. We crash the program by using:
 
 ```Ruby
 raise "Any message"
 ```
 
-Now, to actually run the program we need another file that will just point out to the file that we created before. This is just the "correct" structure. As you will see, modularity and structure clarity are very important for gems, and programming in general. For this reason, under `lib/` we will create a folder named `jekyll-plugin-name.rb` where we will just add:
+Now, to actually run the program we need another file that will just point out to the file that we created before. This is the "correct" structure. As you will see, modularity and structure clarity are very important for gems, and programming in general. For this reason, under `lib/` we will create a folder named `jekyll-plugin-name.rb` where we will just add:
 
 ```Ruby
-require "jekyll/math-svg.rb"
+require "jekyll/plugin-name.rb"
 ```
 
 As you can see all this does is point out to the other file that we created earlier.
@@ -233,7 +246,7 @@ The first thing that you will need to do is to convert your program into a singl
 gem build
 ```
 
-Note that this program won't run unless you have a `.gemspec` file in your root folder. Also, you need to have some files in the `s.files` that we generated earlier in the [[#Creating Your Gem Specification Reference]], otherwise it will just throw an error.
+Note that this program won't run unless you have a `.gemspec` file in your root folder. Also, you need to have some files in the `s.files` that we generated earlier in the [#Creating Your Gem Specification Reference](#Creating Your Gem Specification Reference), otherwise it will just throw an error.
 
 That should have created a `.gem` file in your root folder. It might be a good idea to add it to your `.gitignore`. You can do that easily with:
 
@@ -257,13 +270,15 @@ cd gems
 ls
 ```
 
-If everything has gone correctly your gem should appear in the `ls` output.
+If everything has gone correctly your gem should appear in the `ls` output. As you will see, the gems are placed in a central directory where don't belong to any project there.
 
 ## Linking the Gem in Jekyll
 
-I am assuming that you already have a working jekyll project where you can test this plugin.
+I am assuming that you already have a working Jekyll site where you can test this plugin.
 
-Now everything that you need to do is in your `Gemfile` add your gem:
+ To link your gem with the site there are a couple of things that you must do:
+ 
+ First, you should add it at the end of your `Gemfile` like so:
 
 ```ruby
 group :jekyll_plugins do
@@ -271,7 +286,7 @@ group :jekyll_plugins do
 end
 ```
 
-IT'S VERY IMPORTANT, if you just add `gem jekyll-plugin-name` it won't work, and you will spend the entire afternoon trying to figure out why… In theory it's only needed for plugins that are of the type `Command` but for some reason it also enables debug information to show. I don't know why.
+IT'S VERY IMPORTANT that you add the `group :jekyll_plugins do`, if you just add `gem jekyll-plugin-name` it won't work, and you will spend the entire afternoon trying to figure out why… In theory it's only needed for plugins that are of the type `Command` but for some reason it also enables debug information to show. I don't know why.
 
 BUT you also need to add it to your plugins in the `_config.yaml` so just make sure that your plugin is added like so:
 
@@ -283,13 +298,15 @@ plugins:
 
 ## Building the Site with the Gem
 
-Once you've successfully linked the gem, all you need to do is to run:
+Once you've successfully linked the gem, run:
 
 ```ruby
 bundle install
 ```
 
 That will install all the gems from the Gemfile that are not in the cache. Your gem should be new and therefore shouldn’t be in the cache; therefore, it should install it.
+
+Bundle is the command for managing everything in your Jekyll site, it manages the dependencies, runs the site, etc. You can think of it like a project-specific `gem` command. Whereas `gem` controls the gems system-wide, `bundle` manages the gems inside your project. 
 
 After running that you can make sure that it was installed by running:
 
@@ -305,17 +322,17 @@ Once you know that everything is in place, you can run:
 bundle exec jekyll serve -l
 ```
 
-This will execute `jekyll serve -l` which just builds the site. The `-l` flag is completely optional, but I would recommend it because it enables live-reload. Live reload means that you can make changes in your site, and they will appear on the server without needing to re-run this same command again.
+This will execute `jekyll serve -l` which builds the site. The `-l` flag is completely optional, but I would recommend it because it enables live-reload. Live reload means that you can make changes in your site, and they will appear on the server without needing to re-run this same command again, it will even reload the website for you.
 
 ## Reloading the Gem
 
-When you apply some changes to the gem you will need to redo the steps from [[#Building and Installing your gem]]. However, that is not enough, as Jekyll will still hold the previous version of the file. So, what you need to do is to FIRST uninstall the gem from the system by running:
+When you apply some changes to the gem you will need to update the cache, as Jekyll will still hold the previous version of the file. So, what you need to do is to FIRST uninstall the gem from the system by running:
 
 ```Ruby
 gem uninstall jekyll-plugin-name
 ```
 
-Then, you can build and install the gem to the system again as mentioned in the [[#Building and Installing Your Gem]].
+Then, you can build and install the gem to the system again as mentioned in the [#Building and Installing Your Gem](#Building and Installing Your Gem).
 
 And then you run from the site root folder:
 
@@ -325,7 +342,7 @@ bundle install
 
 This will install all the gems and since the one that you removed from the system is now gone, it will install again the newest version.
 
-However, how do you know if the gem has the latest changes that you wanted it to have and not some other cached changes? Well, we have already discussed a method for doing that in [[#Building the site with the gem]], you can run:
+However, how do you know if the gem has the latest changes that you wanted it to have and not some other cached changes? Well, we have already discussed a method for doing that in [#Building the site with the gem](#Building the site with the gem), you can run:
 
 ```Ruby
 bundle info jekyll-plugin-name
@@ -333,7 +350,7 @@ bundle info jekyll-plugin-name
 
 And from there you go into the path and check the contents to see if there is the newer version.
 
-If that is not the case, then you can just delete the folder specified in the path, and now since Jekyll won't have any cached versions, it will be forced to install the newest one.
+If that is not the case, then you can delete the folder specified in the path, and now since Jekyll won't have any cached versions, it will be forced to install the newest one.
 
 ## Changing Gem Versions
 
@@ -341,7 +358,7 @@ However, if the changes that you made are important and stable, then you might w
 
 ### The Simple way
 
-We have already done it the simple way in the example from [[#Creating Your Gem Specification Reference]]. In your `.gemspec` from your gem root folder, you can just change the version from `s.version`. Note that the `s` can be whatever you specified as `Gem::Specification::new` in the gemspec.
+We have already done it the simple way in the example from [#Creating Your Gem Specification Reference](#Creating Your Gem Specification Reference). In your `.gemspec` from your gem root folder, you can change the version from `s.version`. Note that the `s` can be whatever you specified as `Gem::Specification::new` in the gemspec.
 
 ### The "correct" way
 
@@ -383,7 +400,7 @@ Once you're done with the gem and you have reached a stable enough release you c
 
 ### Publishing it on GitHub
 
-You can publish your gem on GitHub or other similar sites to publicly keep track of the versions, interact with the community and accept pull requests. Additionally, this serves as a way for people to download it from. By just using:
+You can publish your gem on GitHub or other similar sites to publicly keep track of the versions, interact with the community and accept pull requests. Additionally, this serves as a way for people to download it from. By using:
 
 ```Ruby
 gem 'jekyll-plugin-name', git: 'github repository url'
