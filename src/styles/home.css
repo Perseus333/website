@@ -34,11 +34,9 @@
     width: 11rem;
 }
 
-
 #welcome > * {
     align-self: center;
 }
-
 
 #cycle-interests:after {
     animation-name: cycle-interests;
@@ -67,7 +65,7 @@
         content: "...";
     }
     10% {
-        content: "working on rockets";
+        content: "on rockets";
     }
     15% {
         content: "programming";
@@ -82,43 +80,43 @@
         content: "on existential crisis";
     }
     35% {
-        content: "exploring";
+        content: "creating anything";
     }
     40% {
-        content: "thinking";
-    }
-    45% {
         content: "diving into rabbit holes";
     }
+    45% {
+        content: "exploring new places";
+    }
     50% {
-        content: "ricing";
+        content: "ricing my setup";
     }
     55% {
-        content: "learning";
+        content: "learning random stuff";
     }
     60% {
         content: "writing this website";
     }
     65% {
-        content: "journaling";
+        content: "conquering hill tops";
     }
     70% {
-        content: "planning world domination"
+        content: "planning world domination";
     }
     75% {
         content: "learning about rockets";
     }
     80% {
-        content: "playing D&D as DM";
+        content: "playing D&D (as DM)";
     }
     85% {
         content: "finding new hobbies";
     }
     90% {
-        content: "hiking";
+        content: "journaling some days";
     }
     95% {
-        content: "reading";
+        content: "thinking about SPQR";
     }
     100% {
         content: "idling";
