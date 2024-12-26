@@ -51,13 +51,6 @@ body {
     margin: auto;
 }
 
-/*Just for the homepage*/
-#site-info {
-    position: absolute;
-    bottom: 1em;
-    left: 1em;
-}
-
 code {
     text-wrap: auto;
 }

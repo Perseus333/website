@@ -49,6 +49,8 @@
     content: "";
     color: var(--current-bg-color);
     background-color: var(--current-text-color);
+    padding-left: 0.25ch;
+    padding-right: 0.25ch;
 }
 
 @keyframes cycle-interests {
@@ -127,6 +129,47 @@
     display: none;
 }
 
+#site-info {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+@keyframes bounce {
+    0% {
+        rotate: 0deg;
+        bottom: 0em;
+    }
+    25% {
+        rotate: -10deg;
+        bottom: 1em;
+    }
+    50% {
+        rotate: 0deg;
+        bottom: 0em;
+    }
+    75% {
+        rotate: 10deg;
+        bottom: 1em;
+    }
+    100% {
+        rotate: 0deg;
+        bottom: 0em;
+    }
+}
+
+#javascript-free {
+    position: absolute;
+    bottom: 0em;
+    right: 1em;
+    animation: none;
+    padding: 1em;
+}
+
+#javascript-free:hover {
+    animation: bounce 1.25s linear infinite;
+}
+
 /*For mobile nerds*/
 @media (max-width: 940px) {
 
@@ -171,7 +214,9 @@
         margin-right: auto;
     }
     
-    #theme-menu {
+    #theme-menu,
+    #site-info,
+    #javascript-free {
         position: relative;
         padding: 0;
         top: 0;
@@ -180,15 +225,5 @@
         left: 0;
         margin: 0;
     }
-
-    #site-info {
-        position: relative;
-        padding: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
 
 }

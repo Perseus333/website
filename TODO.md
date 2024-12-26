@@ -43,7 +43,7 @@
   - [x] Index
   - [x] Projects Page
 - [x] Collapsable sidebar
-- [ ] Add "JavaScript Free"
+- [x] Add "JavaScript Free"
 - [ ] Add cards
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
