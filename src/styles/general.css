@@ -54,3 +54,9 @@ body {
 code {
     text-wrap: auto;
 }
+
+blockquote {
+    margin: 0;
+    padding-left: 2em;
+    border-left: var(--border-thickness) solid var(--current-text-color);
+}

@@ -4,12 +4,44 @@ layout: post
 permalink: /about-me
 ---
 
-I'm an aerospace student that is more invested into programming than it should.
+> I'm an aerospace student that is more invested into programming than it should be. 
 
----
+## Current Projects
 
-On my way to accomplish goals I get distracted by the small rabbit holes near my path. I just can't help it, they are so appealing. Frequently, it's just small peeks, but sometimes I stumble and fall deeper into those unknown worlds and get lost in their novelty and intricacy.
+- **Ergo Keyboard** - Designing and building my own KB
+- **Jekyll Plugin** - Math to SVG on build effortlessly
+- **Full Planche** - Defying Gravity
+- *This website*
 
-And I think that's beautiful. I reckon that's how life is meant to be lived. Exploring every last bit you can, getting sidetracked by all it's alternatives paths without knowing where they could lead you.
+## Coding through the years:
 
-This is the reason why I have so many hobbies and so many difficulties managing my time to give them all some love. If you want to know more about my hobbies, you can find a 30 second long presentation of them in the [home page](/)
+```
+2018: Owned my first computer, started Batch scripting
+2021: Started coding in python
+2024 (~300h coding):
+    Feb: Fell back into python
+    Mar: Created a firefox add-on
+    Jun: Started learning C++
+    Sep: Got involved with a FOSS project
+    Oct: Created this website
+    Dec: Started learning C and Ruby
+2025: 
+    Jan: Planning publish my first package...
+    Feb: ???
+```
+
+## My current setup
+
+- **Workstation:** MS Surface
+- **Editor:** VS Code
+- **Keyboard Layout:** Custom Colemak-DH
+
+## Other links
+
+↪ [GitHub](https://github.com/Perseus333)
+
+↪ [Reddit](https://www.reddit.com/user/Perseus-Lynx/)
+
+↪ [YouTube](https://www.youtube.com/channel/UCdHzS2hrSC5ovPpvxNnuZWg)
+
+↪ [MonkeyType](https://monkeytype.com/profile/P3RSEUS_LYNX)
