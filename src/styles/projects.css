@@ -1,31 +1,24 @@
 #content {
     max-width: 100%;
     width: initial;
-    padding: 1em;
+    padding: 0 5rem 0 5rem;
 }
 
 #projects-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: initial;
-    gap: 1rem;
+    row-gap: 4rem;
+    column-gap: 2rem;
 }
 
-.project {
-    border: var(--border-thickness) solid var(--current-text-color);
-    padding: 1rem;
+#content .title a {
+    font-family: var(--regular-font);
+    font-size: 1.5em;
 }
-
-.title {
-    margin-bottom: 1em;
-}
-.title a {
-    font-size: xx-large;
-}
-
 
 .thumbnail {
-    width: 100%;
+    width: 90%;
     margin-bottom: 1em;
 }
 
