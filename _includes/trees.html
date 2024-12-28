@@ -10,14 +10,14 @@
         </details>
         <li>
             <ul class="tree-parent">
+                <li>
+                    <a href="/projects"><em>All</em></a>
+                </li>
                 {% for project in site.projects reversed limit:3 %}
                 <li>
                     <a href="{{ project.url }}">{{ project.title }}</a>
                 </li>
                 {% endfor %}
-                <li>
-                    <a href="/projects">more...</a>
-                </li>
             </ul>
         </li>
     </ul>
@@ -27,14 +27,14 @@
         </details>
         <li>
             <ul class="tree-parent">
+                <li>
+                    <a href="/blog"><em>All</em></a>
+                </li>
                 {% for post in site.blog reversed limit:3 %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
                 {% endfor %}
-                <li>
-                    <a href="/blog">more...</a>
-                </li>
             </ul>
         </li>
     </ul>
