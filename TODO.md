@@ -44,7 +44,7 @@
   - [x] Projects Page
 - [x] Collapsable sidebar
 - [x] Add "JavaScript Free"
-- [ ] Add cards
+- [x] Add cards
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed
@@ -62,4 +62,4 @@ Future Projects:
 Future Blogs:
 - [x] On epistocracy
 - [x] On purpose
-- [ ] The Colemak experience
+- [x] The Colemak experience
