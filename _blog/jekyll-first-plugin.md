@@ -2,6 +2,7 @@
 title: "Your first Jekyll plugin"
 date: 2024-12-23
 tag: "programming"
+description: "A beginner friendly guide to plugins"
 ---
 
 You may want to create your own Jekyll plugin, however, there isn't a complete, modern and beginner friendly guide on how to create a Jekyll plugin. This guide is aimed towards people who haven't ever created a Jekyll plugin and don't know Ruby. This isn't just a walkthrough of all the things that you need to create your plugin but also to understand how they work. By understanding the fundamentals, and the why of everything you will save yourself many headaches when debugging.

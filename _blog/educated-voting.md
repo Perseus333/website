@@ -2,6 +2,7 @@
 title: "Educated Voting"
 date: 2024-10-30
 tag: "politics"
+description: "democratizing democracy through education"
 ---
 
 This post intends to explore a new look into voting systems. One where the voters are informed about the outcomes of their decisions through education.

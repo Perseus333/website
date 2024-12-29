@@ -2,6 +2,7 @@
 title: "The Colemak Experience"
 date: 2024-12-28
 tag: "keyboards"
+description: "assesing keyboard layouts"
 ---
 
 Since around 26th of August 2023, I have been typing with the keys of my laptop jumbled around. What is it like typing with a non-qwerty layout? Are there any benefits? But most importantly: Is it worth it?

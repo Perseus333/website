@@ -45,6 +45,11 @@
 - [x] Collapsable sidebar
 - [x] Add "JavaScript Free"
 - [x] Add cards
+- [ ] blogs
+  - [x] Simplify layout
+  - [ ] Dropdown excerpt
+  - [ ] Filter by tags
+- [ ] Homepage trees rework
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed

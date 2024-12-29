@@ -2,6 +2,7 @@
 title: "Shores of Purpose"
 date: 2024-11-13
 tag: "philosophy"
+description: "the search for meaning in an endless sea"
 ---
 
 What is the meaning of life? In this mini-essay I discuss why this question should be re-phrased, and I attempt to describe the most common solutions that there are. You, the captain of your ship, traversing the vast ocean of life, reflect on the current methods of answering this question by deciding how and where to sail.

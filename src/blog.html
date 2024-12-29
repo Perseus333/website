@@ -6,18 +6,22 @@ permalink: /blog/
 ---
 
 <div>
-  <a href="/feed/blog.xml">Atom/RSS Feed</a>
+	<a href="/feed/blog.xml">Atom/RSS Feed</a>
 </div>
 <div id="posts-list">
-    {% for post in site.blog reversed %}
-      <div class="post">
-        <div class="post-header">
-            <h3><a href="{{ post.url }}">{{ post.title }} - {{post.date | date_to_string}}</a></h3>
-            <p class="tag">{{ post.tag }}</p>
-        </div>
-        <div class="post-content">
-            {{ post.excerpt }}
-        </div>
-      </div>
-    {% endfor %}
+		{% for post in site.blog reversed %}
+			<div class="post">
+				<div class="post-date">
+					{{ post.date | date_to_string }}
+				</div>
+				<div class="post-details">
+					<div class="post-header">
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+					</div>
+					<div class="post-info">
+						<strong>#{{ post.tag }}</strong>: {{ post.description }}
+					</div>
+				</div>
+			</div>
+		{% endfor %}
 </div>

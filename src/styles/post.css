@@ -98,12 +98,11 @@ works and is after the sidebar */
     left: 0;
 }
 
-.tag::before {
+.post-tag::before {
     content: "#";
 }
 
-.tag {
-    margin: inherit;
+.post-tag {
     font-weight: bold;
 }
 

@@ -1,7 +1,8 @@
 ---
-title: "Setting Up Adblocking VPN with Pi-Hole"
+title: "Setting up an adblocking VPN with Pi-hole"
 date: 2024-12-01
 tag: "homelab"
+description: "Adbocking anywhere"
 ---
 
 Ads are annoying, yet they are becoming increasingly more ubiquitous, or at least they are trying. With the recent deprecation of Manifest V2 in Google Chrome et. al. they are trying to force more and more advertisements through our eyes. But what if I told you that you can have the equivalent of the webrequest-api of manifest V2 but everywhere... You take the blue pill - the story ends, you continue using Firefox and uBlock. You take the red pill - you begin your journey into home labs and networking.
