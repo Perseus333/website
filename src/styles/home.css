@@ -51,6 +51,10 @@
     flex: 1;
 }
 
+#message > p {
+    height: calc(2 * var(--line-height))
+}
+
 #pfp-container {
     margin-right: 2em;
 }
@@ -161,6 +165,10 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding-left: 2em;
+}
+
+#pages > a {
+    width: fit-content;
 }
 
 #site-info {
