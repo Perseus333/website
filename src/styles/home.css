@@ -8,13 +8,38 @@
     left: 1em;
 }
 
+@keyframes expand-from-center {
+    0% {
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    50% {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    100% {
+        max-height: 100vh;
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
 #content {
     align-items: center;
     display: grid;
     width: 60vw;
+    max-height: 0;
+    overflow-y: hidden;
     border: var(--border-thickness) solid var(--current-text-color);
-    padding: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
     font-size: 20px;
+    animation-name: expand-from-center;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 
 #welcome {
@@ -44,12 +69,10 @@
     animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
     content: "";
     color: var(--current-bg-color);
     background-color: var(--current-text-color);
-    padding-left: 0.25ch;
-    padding-right: 0.25ch;
 }
 
 @keyframes cycle-interests {
@@ -58,6 +81,8 @@
     }
     2% {
         content: ".";
+        padding-left: 0.25ch;
+        padding-right: 0.25ch;
     }
     3% {
         content: "..";
@@ -144,6 +169,15 @@
     left: 1em;
 }
 
+@keyframes gravity {
+    from {
+        bottom: 100vh;
+    }
+    to {
+        bottom: 0em;
+    }
+}
+
 @keyframes bounce {
     0% {
         rotate: 0deg;
@@ -169,14 +203,14 @@
 
 #javascript-free {
     position: absolute;
-    bottom: 0em;
     right: 1em;
-    animation: none;
     padding: 1em;
+    bottom: 0;
+    animation: 1s gravity cubic-bezier(.55,0,.68,.53);
 }
 
 #javascript-free:hover {
-    animation: bounce 1.25s linear infinite;
+    animation: bounce 1.25s infinite linear;
 }
 
 /*For mobile nerds*/
