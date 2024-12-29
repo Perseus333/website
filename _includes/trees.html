@@ -13,7 +13,8 @@
                 <li>
                     <a href="/projects"><em>All</em></a>
                 </li>
-                {% for project in site.projects reversed limit:3 %}
+                {% assign latest_projects = site.projects | reverse %}
+                {% for project in latest_projects limit:3 %}
                 <li>
                     <a href="{{ project.url }}">{{ project.title }}</a>
                 </li>
@@ -30,7 +31,8 @@
                 <li>
                     <a href="/blog"><em>All</em></a>
                 </li>
-                {% for post in site.blog reversed limit:3 %}
+                {% assign latest_posts = site.blog | reverse %}
+                {% for post in latest_posts limit:3 %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>

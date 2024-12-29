@@ -36,7 +36,7 @@ details + li {
 }
 
 details[open] + li {
-  max-height: 250px;
+  max-height: 300px;
   width: fit-content;
   transition: max-height 250ms ease-out;
 }
