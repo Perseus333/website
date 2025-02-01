@@ -19,6 +19,8 @@ You can find the repository of this website [on my GitHub repo](https://github.c
 
 You can find the analytics of the website [on the umami dashboard](https://cloud.umami.is/share/WFgcWwn2qH6fhT2c/perseus333.github.io).
 
+This website is part of the Catppuccin webring!
+
 ## Design Philosophy
 
 I'm still deciding on it as this website progresses but for now this are my guidelines:

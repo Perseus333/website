@@ -56,7 +56,7 @@
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)
   - [ ] Lighthouse the site
-- [ ] Integrate to catppuccin webring (https://ctp-webr.ing/)
+- [x] Integrate to catppuccin webring (https://ctp-webr.ing/)
 - [ ] Add website layouts to customize (infinite work)
 
 ---
