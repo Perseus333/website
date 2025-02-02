@@ -2,46 +2,48 @@
 ---
 
 <!DOCTYPE html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="The website homepage, where you can view my projects, blogs, interests, about me information and contact details. I am Perseus Lynx.">
-	<title>my webSite</title>
-	{% include trees-style.html %}
-	{% include themes-style.html %}
-	{% include general-style.html %}
-	<link rel="stylesheet" href="./src/styles/home.css">
-	{% include umami-analytics.html %}
-</head>
-<body>
-	{% include themes-inputs.html %}
-	<div id="view">
-		<div id="content">
-			<div id="welcome">
-				<div id="pfp-container">
-					<img src="/src/assets/pfp.webp" alt="Round profile picture">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="The website homepage, where you can view my projects, blogs, interests, about me information and contact details. I am Perseus Lynx.">
+		<title>my webSite</title>
+		{% include trees-style.html %}
+		{% include themes-style.html %}
+		{% include general-style.html %}
+		<link rel="stylesheet" href="./src/styles/home.css">
+		{% include umami-analytics.html %}
+	</head>
+	<body>
+		{% include themes-inputs.html %}
+		<div id="view">
+			<div id="content">
+				<div id="welcome">
+					<div id="pfp-container">
+						<img src="/src/assets/pfp.webp" alt="Round profile picture">
+					</div>
+					<div id="message">
+						<h1>Hello there, I am <em>Perseus</em>!</h1>
+						<p>I love <s>wasting</s> investing my time <span id="cycle-interests"></span></p>
+					</div>
 				</div>
-				<div id="message">
-					<h1>Hello there, I am <em>Perseus</em>!</h1>
-					<p>I love <s>wasting</s> investing my time <span id="cycle-interests"></span></p>
+				{% include trees.html %}
+				<div id="pages">
+					<a href="/projects">/projects</a>
+					<a href="/blog">/blog</a>
+					<a href="/this-site">/about</a>
+					<a href="discord://-/users/581902699247829046">/contact</a>
 				</div>
 			</div>
-			{% include trees.html %}
-			<div id="pages">
-				<a href="/projects">/projects</a>
-				<a href="/blog">/blog</a>
-				<a href="/this-site">/about</a>
-				<a href="discord://-/users/581902699247829046">/contact</a>
+			<div id="other-buttons">
+				{% include themes.html %}
+				<div>
+					{% include site-info.html %}
+					<div id="javascript-free">
+						JavaScript Free!
+					</div>
+				</div>
 			</div>
 		</div>
-		<div id="other-buttons">
-			{% include themes.html %}
-			<div>
-				{% include site-info.html %}
-				<div id="javascript-free">
-					JavaScript Free!
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+	</body>
+</html>
