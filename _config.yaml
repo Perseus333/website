@@ -1,6 +1,6 @@
 title: Perseus' Website
 description: A simple personal website
-url: "https://perseus333.github.io"
+url: "https://perseuslynx.dev"
 baseurl: ""
 author: Perseus
 
@@ -10,6 +10,7 @@ kramdown:
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 feed:
   collections:

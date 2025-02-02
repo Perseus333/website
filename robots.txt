@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://perseuslynx.dev/sitemap.xml
