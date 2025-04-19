@@ -1,6 +1,6 @@
 ---
 title: "LineageOS review"
-date: 2024-04-18
+date: 2025-04-18
 tag: "software-review"
 description: "A straightforward review of LineageOS"
 ---

@@ -45,11 +45,11 @@
 - [x] Collapsable sidebar
 - [x] Add "JavaScript Free"
 - [x] Add cards
-- [ ] blogs
+- [x] Improve sidebar design
+- [x] blogs
   - [x] Simplify layout
-  - [ ] Dropdown excerpt
-  - [ ] Filter by tags
-- [ ] Homepage trees rework
+  - [-] Filter by tags
+- [x] Homepage trees rework
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed
@@ -63,6 +63,7 @@
 Future Projects:
 - [x] Some more GitHub projects
 - [ ] Rocket HUD
+- [ ] KB
 
 Future Blogs:
 - [x] On epistocracy

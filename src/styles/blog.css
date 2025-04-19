@@ -9,16 +9,26 @@
     column-gap: 2em;
 }
 
+.post-date {
+    color: var(--current-dim-color);
+}
+
 .post-header h3 {
     margin: 0 0 0.25rem 0;
 }
 
 #posts-list .post-header a {
     font-family: var(--regular-font);
+    font-size: x-large;
 }
 
 .post-header h3::before {
     content: "";
+}
+
+.post-info {
+    font-family: var(--paragraph-font);
+    color: var(--current-dim-color);
 }
 
 .post-tag {

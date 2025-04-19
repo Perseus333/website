@@ -5,7 +5,9 @@
 }
 
 #theme-menu {
+    position: absolute;
     left: 1em;
+    top: 1em;
 }
 
 @keyframes expand-from-center {
@@ -32,9 +34,9 @@
     max-height: 0;
     overflow-y: hidden;
     border: var(--border-thickness) solid var(--current-text-color);
+    /* border-radius: 20px; */
     padding-left: 3em;
     padding-right: 3em;
-    font-size: 20px;
     animation-name: expand-from-center;
     animation-duration: 2s;
     animation-delay: 0.2s;

@@ -5,9 +5,6 @@ style: blog
 permalink: /blog/
 ---
 
-<div>
-	<a href="/feed/blog.xml">Atom/RSS Feed</a>
-</div>
 <div id="posts-list">
 		{% for post in site.blog reversed %}
 			<div class="post">
@@ -16,10 +13,10 @@ permalink: /blog/
 				</div>
 				<div class="post-details">
 					<div class="post-header">
-							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+							<h3><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h3>
 					</div>
 					<div class="post-info">
-						<strong>#{{ post.tag }}</strong>: {{ post.description }}
+						#{{ post.tag }}: {{ post.description }}
 					</div>
 				</div>
 			</div>

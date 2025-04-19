@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "Merriweather-Regular";
-    src: url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+    font-family: "Bitter";
+    src: url("../fonts/Bitter/Bitter-VariableFont_wght.ttf") format("truetype");
 }
 
 @font-face {
@@ -16,9 +16,10 @@
 :root {
     --text-font-size: 18px;
     --mobile-font-size: 14px;
-    --line-height: 1.8em;
+    --line-height: 2em;
     --border-thickness: 2px;
-    --paragraph-font: "Merriweather-Regular";
+    --paragraph-font: "Bitter";
+    --paragraph-font-size: 19px;
 }
 
 html {

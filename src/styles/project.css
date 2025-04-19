@@ -3,8 +3,29 @@
     height: auto;
 }
 
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    height: 2em;
+    padding-bottom: 2em;
+}
+
+#info > * {
+    flex: 1;
+    border: var(--border-thickness) solid var(--current-text-color);
+    margin-left: -2px;
+    align-self: center;
+    padding-left: 1em;
+}
+
+#info > *:first-child {
+    margin-left: 0;
+}
+
 h1 {
-    margin-bottom: 1em;
+    margin-bottom: 0;
 }
 
 hr {

@@ -5,21 +5,25 @@
     --grayscale-bg-color: #111111;
     --grayscale-text-color: #cacaca;
     --grayscale-secondary-color: #ffffff;
+    --grayscale-dim-color: #aaaaaa;
     
     /*Catppuccin Macchiato*/
-    --catppuccin-bg-color: #1e2030;
+    --catppuccin-bg-color: #24273a;
     --catppuccin-text-color: #cad3f5;
     --catppuccin-secondary-color: #f0c6c6; 
+    --catppuccin-dim-color: #939ab7;
 
     /*Gruvbox Dark*/
     --gruvbox-bg-color: #282828;
     --gruvbox-text-color: #ebdbb2;
     --gruvbox-secondary-color: #fe8019;
+    --gruvbox-dim-color: #bdae93;
     
     /*Everforest Dark*/
     --everforest-bg-color: #2d353b;
     --everforest-text-color: #d3c6aa;
     --everforest-secondary-color: #a7c080;
+    --everforest-dim-color: #9da9a0;
     
     /*Terminal Aggressive*/
     --terminal-bg-color: black;
@@ -29,12 +33,14 @@
     --current-bg-color: var(--catppuccin-bg-color);
     --current-text-color: var(--catppuccin-text-color);
     --current-secondary-color: var(--catppuccin-secondary-color);
+    --current-dim-color: var(--catppuccin-dim-color);
 }
 
 #grayscale-theme:checked ~ #view {
     --current-bg-color: var(--grayscale-bg-color);
     --current-text-color: var(--grayscale-text-color);
     --current-secondary-color: var(--grayscale-secondary-color);
+    --current-dim-color: var(--grayscale-dim-color);
     transition: background-color 1s linear;
 }
 
@@ -42,6 +48,7 @@
     --current-bg-color: var(--catppuccin-bg-color);
     --current-text-color: var(--catppuccin-text-color);
     --current-secondary-color: var(--catppuccin-secondary-color);
+    --current-dim-color: var(--catppuccin-dim-color);
     transition: background-color 1s linear;
 }
 
@@ -49,6 +56,7 @@
     --current-bg-color: var(--gruvbox-bg-color);
     --current-text-color: var(--gruvbox-text-color);
     --current-secondary-color: var(--gruvbox-secondary-color);
+    --current-dim-color: var(--gruvbox-dim-color);
     transition: background-color 1s linear;
 }
 
@@ -56,12 +64,14 @@
     --current-bg-color: var(--everforest-bg-color);
     --current-text-color: var(--everforest-text-color);
     --current-secondary-color: var(--everforest-secondary-color);
+    --current-dim-color: var(--everforest-dim-color);
     transition: background-color 1s linear;
 }
 #terminal-theme:checked ~ #view {
     --current-bg-color: var(--terminal-bg-color);
     --current-text-color: var(--terminal-text-color);
     --current-secondary-color: var(--terminal-secondary-color);
+    --current-dim-color: var(--terminal-text-color);
     --regular-font: "IBM_VGA";
     transition: background-color 1s linear;
 }
@@ -83,12 +93,6 @@ a:hover {
 }
 
 #theme-menu {
-    position: absolute;
-    top: 1em;
-    z-index: 999;
-}
-
-#theme-menu {
     padding-bottom: 1em;
 }
 
@@ -97,7 +101,14 @@ a:hover {
 }
 
 .theme {
-    margin-right: 1em;
+    width: fit-content;
+}
+
+.theme-label {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 8rem;
+    display: inline-block;
 }
 
 /*Manages the dropdown animation*/
@@ -112,7 +123,6 @@ a:hover {
     max-height: 10em;
     transition: max-height 300ms ease-out;
 }
-
 
 .theme:has(label[for="grayscale-theme"]) {
     background-color: var(--grayscale-bg-color);

@@ -1,8 +1,11 @@
+/*
 #content {
     max-width: 100%;
     width: initial;
+    
     padding: 0 5rem 0 5rem;
 }
+*/
 
 #projects-list {
     display: grid;
@@ -12,9 +15,14 @@
     column-gap: 2rem;
 }
 
+.project-content {
+    color: var(--current-dim-color);
+    line-height: 1.5em;
+}
+
 #content .title a {
     font-family: var(--regular-font);
-    font-size: 1.5em;
+    font-size: x-large;
 }
 
 .thumbnail {
