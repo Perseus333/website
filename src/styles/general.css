@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "DMMono-Regular";
+    font-family: "DMMono";
     src: url("../fonts/DMmono/DMMono-Light.ttf") format("truetype");
 }
 
@@ -60,4 +60,8 @@ blockquote {
     margin: 0;
     padding-left: 2em;
     border-left: var(--border-thickness) solid var(--current-text-color);
+}
+
+p {
+    margin: 0;
 }

@@ -50,6 +50,9 @@
   - [x] Simplify layout
   - [-] Filter by tags
 - [x] Homepage trees rework
+- [ ] Improve homepage layout
+  - [ ] Change theme name for an ico
+- [ ] Improve post style
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed

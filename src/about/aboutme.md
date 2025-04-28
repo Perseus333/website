@@ -10,7 +10,7 @@ permalink: /about-me
 
 - **Ergo Keyboard** - Designing and building my own KB
 - **Jekyll Plugin** - Math to SVG on build effortlessly
-- **Full Planche** - Defying Gravity
+- **Full Planche**
 - *This website*
 
 ## Coding through the years:

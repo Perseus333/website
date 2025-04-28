@@ -1,5 +1,5 @@
 :root {
-    --regular-font: "DMMono-Regular";
+    --regular-font: "DMMono", monospace;
     
     /*Grayscale Custom*/
     --grayscale-bg-color: #111111;

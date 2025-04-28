@@ -17,17 +17,24 @@
 	<body>
 		{% include themes-inputs.html %}
 		<div id="view">
-			<div id="content">
-				<div id="welcome">
-					<div id="pfp-container">
-						<img src="/src/assets/pfp.webp" alt="Round profile picture">
+			<div id="card">
+				<div id="banner">
+				</div>
+				<div id="pfp-container">
+					<img src="/src/assets/pfp-big.webp" alt="Round profile picture">
+				</div>
+				<div id="contents">
+					<div id="name">
+						<h2>Perseus</h2>
+					</div>
+					<div id="subtitle">
+						<p>i do stuff</p>
 					</div>
 					<div id="message">
-						<h1>Hello there, I am <em>Perseus</em>!</h1>
-						<p>I love <s>wasting</s> investing my time <span id="cycle-interests"></span></p>
+						Welcome to my tiny corner of the internet!
 					</div>
 				</div>
-				{% include trees.html %}
+				<hr class="separator">
 				<div id="pages">
 					<a href="/projects">/projects</a>
 					<a href="/blog">/blog</a>
@@ -35,15 +42,7 @@
 					<a href="discord://-/users/581902699247829046">/contact</a>
 				</div>
 			</div>
-			<div id="other-buttons">
-				{% include themes.html %}
-				<div>
-					{% include site-info.html %}
-					<div id="javascript-free">
-						JavaScript Free!
-					</div>
-				</div>
-			</div>
+			{% include themes.html %}
 		</div>
 	</body>
 </html>
