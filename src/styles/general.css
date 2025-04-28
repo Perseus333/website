@@ -28,6 +28,11 @@ html {
 }
 
 body {
+    background-color: var(--current-bg-color);
+    color: var(--current-text-color);
+    font-family: var(--regular-font);
+    line-height: var(--line-height);
+    font-size: var(--text-font-size);
     margin: 0;
 }
 
@@ -38,14 +43,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-#view {
-    background-color: var(--current-bg-color);
-    color: var(--current-text-color);
-    font-family: var(--regular-font);
-    line-height: var(--line-height);
-    font-size: var(--text-font-size);
 }
 
 #content {
