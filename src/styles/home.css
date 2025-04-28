@@ -3,19 +3,20 @@
     align-items: center;
     display: grid;
     grid-template-columns: auto 0;
-    background-color: #1a1c2a;
+    background-color: #5b6078;
 }
 
 #card {
     font-size: 16px;
     display: grid;
     height: 40rem;
-    width: 35rem;
+    width: 32rem;
     overflow-y: hidden;
     border-radius: 1rem;
-    grid-template-rows: 1fr 0 1fr 0 1fr;
+    grid-template-rows: 1fr 0 1fr 1fr;
     background-color: var(--current-bg-color);
     font-family: var(--regular-font), sans-serif, var(--paragraph-font);
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
 }
 
 #banner {
@@ -36,7 +37,7 @@
 }
 
 #pfp-container > img {
-    height: 100%;
+    height: 7rem;
     border-radius: 100%;
 }
 
@@ -59,27 +60,116 @@
 
 #message {
     margin-top: 2rem;
-    height: 2em;
     line-height: 1.5em;
+    font-family: sans-serif, "Bitter";
+    font-kerning: normal;
 }
 
-.separator {
-    width: 50%;
-    margin: auto;
+#cycle-interests:after {
+    animation-name: cycle-interests;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    content: "";
+    color: var(--current-bg-color);
+    background-color: var(--current-text-color);
+}
+
+@keyframes cycle-interests {
+    0% {
+        content: "";
+    }
+    2% {
+        content: ".";
+        padding-left: 0.25ch;
+        padding-right: 0.25ch;
+    }
+    3% {
+        content: "..";
+    }
+    5% {
+        content: "...";
+    }
+    10% {
+        content: "on rockets";
+    }
+    15% {
+        content: "programming";
+    }
+    20% {
+        content: "doing calisthenics";
+    }
+    25% {
+        content: "typing fast";
+    }
+    30% {
+        content: "on existential crisis";
+    }
+    35% {
+        content: "creating anything";
+    }
+    40% {
+        content: "diving into rabbit holes";
+    }
+    45% {
+        content: "exploring new places";
+    }
+    50% {
+        content: "ricing my setup";
+    }
+    55% {
+        content: "learning random stuff";
+    }
+    60% {
+        content: "writing this website";
+    }
+    65% {
+        content: "conquering hill tops";
+    }
+    70% {
+        content: "planning world domination";
+    }
+    75% {
+        content: "learning about rockets";
+    }
+    80% {
+        content: "playing D&D (as DM)";
+    }
+    85% {
+        content: "finding new hobbies";
+    }
+    90% {
+        content: "journaling some days";
+    }
+    95% {
+        content: "thinking about SPQR";
+    }
+    100% {
+        content: "idling";
+    }
 }
 
 #pages {
-    font-size: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 3em;
     justify-items: center;
     align-items: center;
 }
 
-#pages > a {
-    width: 10ch;
+.page-btn {
+    text-align: center;
+}
+
+.page-icn {
+    margin: 0;
+}
+
+#pages a {
+    margin-top: -1rem;
     text-decoration: none;
+    display: block;
 }
 
 #theme-menu {
@@ -91,36 +181,27 @@
 
 #theme-menu summary {
     list-style-type: none;
+    font-size: 16px;
 }
 
 /*For mobile nerds*/
-@media (max-width: 940px) {
+@media (max-width: 680px) {
 
-    #view {
-        display: block;
-    }
-
-    #content {
-        width: fit-content;
-        border: none;
-        word-wrap: break-word;
-        padding: 2em;
-        margin: 0;
-        display: block;
+    #card {
+        margin-top: 5vh;
+        width: 95vw;
+        height: auto;
     }
     
     #welcome {
         display: block;
     }
     
-    #pfp-container {
-        display: grid;
-        justify-content: center;
-        margin: 0;
+    #pages {
+        grid-template-columns: 1fr 1fr;
     }
 
-    #pfp-container > img {
-        height: 20vh;
-        width: 20vh;
+    #theme-menu {
+        display: none;
     }
 }
