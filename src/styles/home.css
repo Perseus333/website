@@ -13,7 +13,7 @@
     width: 35rem;
     overflow-y: hidden;
     border-radius: 1rem;
-    grid-template-rows: 1fr 0 1fr 0 1fr;
+    grid-template-rows: 1fr 0 auto 0 1fr;
     background-color: var(--current-bg-color);
     font-family: var(--regular-font), sans-serif, var(--paragraph-font);
 }
@@ -43,6 +43,7 @@
 #contents {
     margin-top: 4rem;
     padding-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 #name {
@@ -68,19 +69,26 @@
     margin: auto;
 }
 
-#pages {
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3em;
-    justify-items: center;
-    align-items: center;
+/*Custom tree style for home*/
+#home-tree,
+#about-tree,
+#contact-tree {
+    display: none;
 }
 
-#pages > a {
-    width: 10ch;
-    text-decoration: none;
+#trees {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 2rem;
+    box-sizing: border-box;
 }
+
+.tree ul {
+    --line-height: 1rem;
+}
+
 
 #theme-menu {
     position: absolute;

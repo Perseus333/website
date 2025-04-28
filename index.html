@@ -8,9 +8,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="The website homepage, where you can view my projects, blogs, interests, about me information and contact details. I am Perseus Lynx.">
 		<title>my webSite</title>
-		{% include trees-style.html %}
 		{% include themes-style.html %}
 		{% include general-style.html %}
+		{% include trees-style.html %}
 		<link rel="stylesheet" href="./src/styles/home.css">
 		{% include umami-analytics.html %}
 	</head>
@@ -28,19 +28,11 @@
 						<h2>Perseus</h2>
 					</div>
 					<div id="subtitle">
-						<p>i do stuff</p>
-					</div>
-					<div id="message">
-						Welcome to my tiny corner of the internet!
+						<a href="/src/about/aboutme.md">[about me]</a>
 					</div>
 				</div>
 				<hr class="separator">
-				<div id="pages">
-					<a href="/projects">/projects</a>
-					<a href="/blog">/blog</a>
-					<a href="/this-site">/about</a>
-					<a href="discord://-/users/581902699247829046">/contact</a>
-				</div>
+				{% include trees.html %}
 			</div>
 			{% include themes.html %}
 		</div>
