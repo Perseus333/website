@@ -9,13 +9,13 @@
 		<meta name="description" content="The website homepage, where you can view my projects, blogs, interests, about me information and contact details. I am Perseus Lynx.">
 		<title>my webSite</title>
 		{% include themes-style.html %}
+		{% include theme-read.html %}
 		{% include general-style.html %}
 		{% include trees-style.html %}
 		<link rel="stylesheet" href="./src/styles/home.css">
 		{% include umami-analytics.html %}
 	</head>
 	<body>
-		{% include themes-inputs.html %}
 		<div id="view">
 			<div id="card">
 				<div id="banner">
@@ -57,5 +57,6 @@
 			</div>
 			{% include themes.html %}
 		</div>
+		<script src="../src/js/themes.js"></script>
 	</body>
 </html>

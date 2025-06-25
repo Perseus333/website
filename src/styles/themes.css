@@ -3,77 +3,78 @@
     
     /*Grayscale Custom*/
     --grayscale-bg-color: #111111;
+    --grayscale-surface-color: #444444;
     --grayscale-text-color: #cacaca;
     --grayscale-secondary-color: #ffffff;
     --grayscale-dim-color: #aaaaaa;
     
     /*Catppuccin Macchiato*/
     --catppuccin-bg-color: #24273a;
+    --catppuccin-surface-color: #5b6078;
     --catppuccin-text-color: #cad3f5;
     --catppuccin-secondary-color: #f0c6c6; 
     --catppuccin-dim-color: #939ab7;
 
     /*Gruvbox Dark*/
     --gruvbox-bg-color: #282828;
+    --gruvbox-surface-color: #504945;
     --gruvbox-text-color: #ebdbb2;
     --gruvbox-secondary-color: #fe8019;
     --gruvbox-dim-color: #bdae93;
     
     /*Everforest Dark*/
     --everforest-bg-color: #2d353b;
+    --everforest-surface-color: #475258;
     --everforest-text-color: #d3c6aa;
     --everforest-secondary-color: #a7c080;
     --everforest-dim-color: #9da9a0;
     
     /*Terminal Aggressive*/
     --terminal-bg-color: black;
+    --terminal-surface-color: black;
     --terminal-text-color: lime;
     --terminal-secondary-color: lime;
-    
-    --current-bg-color: var(--catppuccin-bg-color);
-    --current-text-color: var(--catppuccin-text-color);
-    --current-secondary-color: var(--catppuccin-secondary-color);
-    --current-dim-color: var(--catppuccin-dim-color);
+    --terminal-dim-color: lime;
 }
 
-#grayscale-theme:checked ~ #view {
+body.theme-grayscale{
     --current-bg-color: var(--grayscale-bg-color);
+    --current-surface-color: var(--grayscale-surface-color);
     --current-text-color: var(--grayscale-text-color);
     --current-secondary-color: var(--grayscale-secondary-color);
     --current-dim-color: var(--grayscale-dim-color);
-    transition: background-color 1s linear;
 }
 
-#catppuccin-theme:checked ~ #view {
+body.theme-catppuccin {
     --current-bg-color: var(--catppuccin-bg-color);
+    --current-surface-color: var(--catppuccin-surface-color);
     --current-text-color: var(--catppuccin-text-color);
     --current-secondary-color: var(--catppuccin-secondary-color);
     --current-dim-color: var(--catppuccin-dim-color);
-    transition: background-color 1s linear;
 }
 
-#gruvbox-theme:checked ~ #view {
+body.theme-gruvbox {
     --current-bg-color: var(--gruvbox-bg-color);
+    --current-surface-color: var(--gruvbox-surface-color);
     --current-text-color: var(--gruvbox-text-color);
     --current-secondary-color: var(--gruvbox-secondary-color);
     --current-dim-color: var(--gruvbox-dim-color);
-    transition: background-color 1s linear;
 }
 
-#everforest-theme:checked ~ #view {
+body.theme-everforest {
     --current-bg-color: var(--everforest-bg-color);
+    --current-surface-color: var(--everforest-surface-color);
     --current-text-color: var(--everforest-text-color);
     --current-secondary-color: var(--everforest-secondary-color);
     --current-dim-color: var(--everforest-dim-color);
-    transition: background-color 1s linear;
 }
-#terminal-theme:checked ~ #view {
+body.theme-terminal {
     --current-bg-color: var(--terminal-bg-color);
+    --current-surface-color: var(--terminal-surface-color);
     --current-text-color: var(--terminal-text-color);
     --current-secondary-color: var(--terminal-secondary-color);
     --current-dim-color: var(--terminal-text-color);
     --regular-font: "IBM_VGA";
-    transition: background-color 1s linear;
 }
 
 body > input {
@@ -93,6 +94,7 @@ a:hover {
 }
 
 #theme-menu {
+    max-width: 8rem;
     padding-bottom: 1em;
 }
 
@@ -101,14 +103,9 @@ a:hover {
 }
 
 .theme {
-    width: fit-content;
-}
-
-.theme-label {
     padding-left: 1rem;
     padding-right: 1rem;
     min-width: 8rem;
-    display: inline-block;
 }
 
 /*Manages the dropdown animation*/
@@ -124,23 +121,23 @@ a:hover {
     transition: max-height 300ms ease-out;
 }
 
-.theme:has(label[for="grayscale-theme"]) {
+.theme[data-theme="grayscale"] {
     background-color: var(--grayscale-bg-color);
     color: var(--grayscale-text-color);
 }
-.theme:has(label[for="catppuccin-theme"]) {
+.theme[data-theme="catppuccin"] {
     background-color: var(--catppuccin-bg-color);
     color: var(--catppuccin-text-color);
 }
-.theme:has(label[for="gruvbox-theme"]) {
+.theme[data-theme="gruvbox"] {
     background-color: var(--gruvbox-bg-color);
     color: var(--gruvbox-text-color);
 }
-.theme:has(label[for="everforest-theme"]) {
+.theme[data-theme="everforest"] {
     background-color: var(--everforest-bg-color);
     color: var(--everforest-text-color);
 }
-.theme:has(label[for="terminal-theme"]) {
+.theme[data-theme="terminal"] {
     background-color: var(--terminal-bg-color);
     color: var(--terminal-text-color);
     font-family: "IBM_VGA";

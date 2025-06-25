@@ -6,6 +6,7 @@
 		<meta name="description" content="{% if page.description %}{{ page.description }} {% endif %}{% assign excerpt = content | strip_html | truncate: 100, '' %}{{ excerpt }}">
 		<title>{{ page.title }}</title>
 		{% include general-style.html %}
+		{% include theme-read.html %}
 		{% include themes-style.html %}   
 		{% include trees-style.html %}
 		{% include post-style.html %}
@@ -27,7 +28,6 @@
 		{% endif %}
 	</head>
 	<body>
-		{% include themes-inputs.html %}
 		<div id="view">
 			<details id="mobile-sidebar-toggle">
 				<summary>
@@ -63,5 +63,6 @@
 				{{ content }}
 			</div>
 		</div>
+		<script src="../src/js/themes.js"></script>
 	</body>
 </html>

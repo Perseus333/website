@@ -3,7 +3,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: auto 0;
-    background-color: #5b6078;
+    background-color: var(--current-surface-color);
 }
 
 #card {
