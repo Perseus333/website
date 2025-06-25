@@ -1,3 +1,7 @@
+:root {
+  --tree-line-height: 1.3em;
+}
+
 #trees {
   display: grid;
   width: 100%;
@@ -13,7 +17,8 @@
 }
 
 .tree-parent li {
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
+  line-height: 1.3em;
 }
 
 .tree a {
@@ -22,11 +27,11 @@
 
 #trees p {
   margin: 0;
-  font-weight: bold;
+  font-weight: 250;
 }
 
 summary {
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -82,7 +87,7 @@ Copyright 2024 Oskar Wickström
   .tree ul li:before {
     position: absolute;
     display: block;
-    top: calc(var(--line-height) / 2);
+    top: calc(var(--tree-line-height) / 2);
     left: 0;
     content: "";
     width: 1ch;
@@ -97,7 +102,7 @@ Copyright 2024 Oskar Wickström
     top: 0;
     left: 0;
     content: "";
-    height: calc(var(--line-height) / 2);
+    height: calc(var(--tree-line-height) / 2);
     border-left: var(--border-thickness) solid var(--current-dim-color);
   }
 

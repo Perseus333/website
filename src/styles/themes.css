@@ -1,6 +1,4 @@
-:root {
-    --regular-font: "DMMono", monospace;
-    
+:root {    
     /*Grayscale Custom*/
     --grayscale-bg-color: #111111;
     --grayscale-surface-color: #444444;
@@ -90,7 +88,7 @@ a:hover {
 }
 
 #theme-menu {
-    max-width: 8rem;
+    max-width: 9rem;
     padding-bottom: 1em;
 }
 

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "DMMono";
-    src: url("../fonts/DMmono/DMMono-Light.ttf") format("truetype");
+    font-family: "Monaspace_Neon";
+    src: url("../fonts/Monaspace/monaspace-neon.ttf") format("truetype");
 }
 
 @font-face {
@@ -16,8 +16,9 @@
 :root {
     --text-font-size: 18px;
     --mobile-font-size: 14px;
-    --line-height: 2em;
+    --line-height: 1.8em;
     --border-thickness: 2px;
+    --regular-font: "Monaspace_Neon", monospace;
     --paragraph-font: "Bitter";
     --paragraph-font-size: 19px;
 }

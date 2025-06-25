@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (savedTheme) {
     applyTheme(savedTheme);
   }
+  else {
+    applyTheme("catppuccin");
+  }
 
   themeButtons.forEach(button => {
     button.addEventListener('click', () => {

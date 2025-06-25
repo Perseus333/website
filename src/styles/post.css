@@ -113,24 +113,21 @@ works and is after the sidebar */
 /*Markdown Element styling*/
 
 h1 {
-    margin-bottom: 2em;
     border: var(--border-thickness) solid var(--current-text-color);
     padding: 0.5em;
 }
 
 h2 {
     margin-top: 3em;
+    margin-bottom: 1em;
     border-bottom: var(--border-thickness) solid var(--current-text-color);
     font-size: 1.75em;
 }
 
-h3::before {
-    content: "> ";
-}
-
 h3 {
-    margin-top: 3em;
-    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
 }
 
 #content p:not(.tag),
@@ -138,7 +135,7 @@ h3 {
 #content a {
     font-family: var(--paragraph-font);
     font-size: var(--paragraph-font-size);
-    font-weight: 450;
+    font-weight: 350;
 }
 
 #content > p, #content > ul, #content > ol {

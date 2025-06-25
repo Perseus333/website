@@ -51,8 +51,7 @@
   - [-] Filter by tags
 - [x] Homepage trees rework
 - [x] Improve homepage layout
-  - [ ] Change theme name for an ico
-- [ ] Fix broken themes
+- [x] Fix broken themes
 - [ ] Improve post style
 - [ ] Fix catpuccin link to page with webring
 
