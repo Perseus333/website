@@ -20,7 +20,7 @@
 }
 
 .theme-terminal #card {
-    border: var(--current-text-color) 2px solid;
+    border: var(--current-text-color) var(--border-thickness) solid;
     border-radius: 0;
     font-size: 18px;
 }
@@ -205,6 +205,10 @@
     padding: 2em;
 }
 
+#pages a.page-btn {
+    text-decoration: none;
+}
+
 .theme-terminal .page-btn svg {
     display: none;
 }
@@ -213,9 +217,8 @@
     margin: 0;
 }
 
-#pages a {
+#pages .page-lbl {
     margin-top: -1rem;
-    text-decoration: none;
     display: block;
 }
 
