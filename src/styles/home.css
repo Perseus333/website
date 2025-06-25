@@ -19,11 +19,42 @@
     box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
 }
 
+.theme-terminal #card {
+    border: var(--current-text-color) 2px solid;
+    border-radius: 0;
+    font-size: 18px;
+}
+
 #banner {
-    background-image: url("/src/assets/banner-1920.webp");
     background-position: center;
     background-size: cover;
     height: 100%;
+}
+
+.theme-grayscale #banner {
+    background-image: url("/src/assets/banner-grayscale.webp");
+}
+
+.theme-catppuccin #banner {
+    background-image: url("/src/assets/banner-catppuccin.webp");
+}
+
+.theme-everforest #banner {
+    background-image: url("/src/assets/banner-everforest.webp");
+}
+
+.theme-gruvbox #banner {
+    background-image: url("/src/assets/banner-gruvbox.webp");
+}
+
+.theme-terminal #banner {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.theme-terminal #banner::after{
+    content: ">++++++++[<+++++++++>-]<.>++++[<+++++++>-]<+.+++++++..+++.>>++++++[<+++++++>-]<++.------------.>++++++[<+++++++++>-]<+.<.+++.------.--------.>>>++++[<++++++++>-]<+.";
 }
 
 #pfp-container {
@@ -39,6 +70,10 @@
 #pfp-container > img {
     height: 7rem;
     border-radius: 100%;
+}
+
+.theme-grayscale #pfp-container > img {
+    filter: grayscale();
 }
 
 #contents {
@@ -64,6 +99,10 @@
     line-height: 1.5em;
     font-family: sans-serif, "Bitter";
     font-kerning: normal;
+}
+
+.theme-terminal #message {
+    font-family: var(--regular-font);
 }
 
 #cycle-interests:after {
@@ -157,10 +196,17 @@
     padding: 3em;
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 
-.page-btn {
-    text-align: center;
+.theme-terminal #pages {
+    display: block;
+    text-align: left;
+    padding: 2em;
+}
+
+.theme-terminal .page-btn svg {
+    display: none;
 }
 
 .page-icn {
