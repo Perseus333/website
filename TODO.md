@@ -54,6 +54,8 @@
   - [ ] Change theme name for an ico
 - [ ] Fix broken themes
 - [ ] Improve post style
+- [ ] Fix catpuccin link to page with webring
+
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed
