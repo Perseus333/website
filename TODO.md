@@ -52,9 +52,13 @@
 - [x] Homepage trees rework
 - [x] Improve homepage layout
 - [x] Fix broken themes
-- [ ] Improve post style
-- [ ] Fix catpuccin link to page with webring
+- [x] Improve post style
+- [ ] Improve sidebar (less intrusive)
+- [x] Merge /about in one page
+- [x] Make /contact a page
+- [x] Fix catpuccin link to page with webring
 
+- [ ] Add breadcrumb path
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
 - [ ] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed
