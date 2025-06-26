@@ -81,6 +81,7 @@ works and is after the sidebar */
 
 #theme-menu {
     position: relative;
+    z-index: 999;
 }
 
 #trees-container {
@@ -106,10 +107,6 @@ works and is after the sidebar */
     content: "#";
 }
 
-.tag {
-    font-weight: bold;
-}
-
 /*Markdown Element styling*/
 
 h1 {
@@ -122,6 +119,7 @@ h2 {
     margin-bottom: 1em;
     border-bottom: var(--border-thickness) solid var(--current-text-color);
     font-size: 1.75em;
+    font-weight: 500;
 }
 
 h3 {
@@ -135,7 +133,7 @@ h3 {
 #content a {
     font-family: var(--paragraph-font);
     font-size: var(--paragraph-font-size);
-    font-weight: 350;
+    font-weight: 400;
 }
 
 #content > p, #content > ul, #content > ol {
@@ -174,6 +172,10 @@ table th,
 table td {
     padding: 0 1em;
     text-align: center;
+}
+
+blockquote {
+    margin-bottom: 1rem;
 }
 
 /*For the mobile nerds*/

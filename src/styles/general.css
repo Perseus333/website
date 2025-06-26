@@ -14,13 +14,13 @@
 }
 
 :root {
-    --text-font-size: 18px;
+    --text-font-size: 16px;
     --mobile-font-size: 14px;
     --line-height: 1.8em;
     --border-thickness: 2px;
     --regular-font: "Monaspace_Neon", monospace;
     --paragraph-font: "Bitter";
-    --paragraph-font-size: 19px;
+    --paragraph-font-size: 18px;
 }
 
 html {
@@ -62,4 +62,15 @@ blockquote {
 
 p {
     margin: 0;
+}
+
+a {
+    text-decoration-style: dotted;
+    color: var(--current-text-color) !important;
+}
+
+a:hover {
+    text-decoration-style: solid;
+    color: var(--current-secondary-color) !important;
+    transition: 0.1s linear;
 }

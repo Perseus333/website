@@ -25,7 +25,7 @@
 }
 
 h1 {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--border-thickness)*-1);
 }
 
 hr {

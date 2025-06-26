@@ -41,6 +41,9 @@ body.theme-grayscale{
     --current-text-color: var(--grayscale-text-color);
     --current-secondary-color: var(--grayscale-secondary-color);
     --current-dim-color: var(--grayscale-dim-color);
+    img, svg {
+        filter: grayscale();
+    }
 }
 
 body.theme-catppuccin {
@@ -77,14 +80,6 @@ body.theme-terminal {
 
 a:link, a:visited {
     color: var(--current-text-color);
-}
-
-a {
-    text-decoration-style: dotted;
-}
-
-a:hover {
-    text-decoration-style: solid;
 }
 
 #theme-menu {

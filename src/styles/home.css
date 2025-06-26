@@ -78,8 +78,9 @@
 
 #contents {
     margin-top: 4rem;
-    padding-left: 2rem;
     margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 #name {
@@ -110,7 +111,7 @@
     animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 1s;
     content: "";
     color: var(--current-bg-color);
     background-color: var(--current-text-color);
@@ -205,6 +206,10 @@
     padding: 2em;
 }
 
+#pages .page-btn svg {
+    color: var(--current-secondary-color)
+}
+
 #pages a.page-btn {
     text-decoration: none;
 }
@@ -214,7 +219,7 @@
 }
 
 .page-icn {
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 #pages .page-lbl {
@@ -231,7 +236,6 @@
     position: absolute;
     top: 1rem;
     left: 1rem;
-    color: var(--current-dim-color);
 }
 
 #theme-menu summary {

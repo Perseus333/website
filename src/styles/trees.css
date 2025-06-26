@@ -36,7 +36,7 @@ summary {
 }
 
 details > summary {
-  list-style-type: '> ';
+  list-style-type: none;
 }
 
 #trees details > summary {
@@ -44,7 +44,7 @@ details > summary {
 }
 
 details[open] > summary {
-  list-style-type: '↪ ';
+  list-style-type: none;
 }
 
 #trees details[open] > summary {
