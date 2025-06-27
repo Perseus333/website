@@ -53,7 +53,7 @@
 - [x] Improve homepage layout
 - [x] Fix broken themes
 - [x] Improve post style
-- [ ] Improve sidebar (less intrusive)
+- [x] Improve sidebar (less intrusive)
 - [x] Merge /about in one page
 - [x] Make /contact a page
 - [x] Fix catpuccin link to page with webring
