@@ -14,11 +14,12 @@
 #trees > ul {
   padding-right: 2em;
   margin-top: 0px;
+  margin-bottom: 0.5rem;
 }
 
 .tree-parent li {
   padding-bottom: 1em;
-  line-height: 1.3em;
+  line-height: var(--tree-line-height);
 }
 
 .tree a {

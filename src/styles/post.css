@@ -16,12 +16,23 @@
     display: none;
 }
 
-#desktop-sidebar-toggle {
+.config {
+    top: 0;
+    height: 0;
     display: block;
     position: sticky;
     color: var(--current-dim-color);
-    top: 0;
-    height: 0;
+}
+
+#theme-menu {
+    padding-top: 2rem;
+    margin-left: 5rem;
+    transition: 250ms;
+    pointer-events: auto;
+    transition: opacity 250ms, margin-left 250ms;
+}
+
+#desktop-sidebar-toggle {
     .icn-regular {
         display: block;
         opacity: 0.1;
@@ -29,25 +40,23 @@
     }
 }
 
-
-
-#desktop-sidebar-toggle:hover {
+#desktop-sidebar-toggle:hover .icn-regular {
+    opacity: 1;
+    transition: 0.1s;
     color: var(--curent-text-color);
-    .icn-regular {
-        opacity: 1;
-        transition: 0.1s;
-    }
 }
 
 #desktop-sidebar-toggle > summary {
     width: fit-content;
     padding: 2rem;
+    background-clip: content-box;
+    background-color: var(--current-bg-color);
     .icn-focus {
         display: none;
     }
 }
 
-#desktop-sidebar-toggle[open] > summary {
+#desktop-sidebar-toggle[open] {
     .icn-focus {
         display: block;
     }
@@ -56,12 +65,18 @@
     }
 }
 
+#desktop-sidebar-toggle:not([open]) ~ .config-wrapper #theme-menu {
+    margin-left: 2rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
 #sidebar {
     position: sticky;
     top: 0em;
     padding-left: 0;
     display: grid;
-    grid-template-rows: 4em auto 4em;
+    grid-template-rows: 4rem auto 4rem;
     row-gap: 2em;
     height: 100vh;
     max-height: 100vh;
@@ -78,17 +93,19 @@
 #desktop-sidebar-toggle[open] ~ #view #sidebar {
     max-width: 20ch;
     min-width: 20ch;
+    margin-right: 1rem;
     transition: max-width 250ms ease-out, min-width 250ms ease-out;
     /* border-right: var(--border-thickness) solid var(--current-text-color); */
 }
 
-#theme-menu {
-    position: relative;
-    z-index: 999;
+#sidebar-title {
+    h3 {
+        margin: 0;
+    }
 }
 
 #trees-container {
-    align-self: center;
+    /*align-self: center;*/
     overflow-y: auto;
     justify-self: stretch;
     max-height: 100%;
@@ -103,8 +120,10 @@
     position: relative;
     bottom: 0;
     left: 0;
-    /* text-align: center; */
-    /* margin-left: -1em; */
+}
+
+.tag {
+    margin-top: -2rem;
 }
 
 .tag::before {
@@ -116,6 +135,8 @@
 h1 {
     border: var(--border-thickness) solid var(--current-text-color);
     padding: 0.5em;
+    margin-top: 0;
+    margin-bottom: 3rem;
 }
 
 h2 {
