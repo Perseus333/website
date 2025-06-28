@@ -60,7 +60,7 @@
 
 - [ ] Add breadcrumb path
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
-- [ ] Theme memory (try to be through server not JS)
+- [x] Theme memory (try to be through server not JS)
 - [ ] Optimize for speed
   - [ ] Preload fonts
   - [ ] Preload styles selectively (hardcoded)

@@ -18,6 +18,7 @@
 .project-content {
     color: var(--current-dim-color);
     line-height: 1.5em;
+    font-family: var(--paragraph-font);
 }
 
 #content .title a {

@@ -24,6 +24,10 @@
     margin-left: 0;
 }
 
+.tag {
+    margin-top: 0;
+}
+
 h1 {
     margin-bottom: calc(var(--border-thickness)*-1);
 }
