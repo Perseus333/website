@@ -71,8 +71,9 @@
 ---
 Future Projects:
 - [x] Some more GitHub projects
-- [ ] Rocket HUD
+- [x] AuTOTP
 - [ ] KB
+- [ ] Rocket HUD
 
 Future Blogs:
 - [x] On epistocracy

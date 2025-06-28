@@ -1,6 +1,6 @@
 ---
 title: "Auto Reader View Manager"
-tags: ["Firefox add-on", "JavaScript"]
+tags: ["add-on", "javaScript"]
 github: "github.com/Perseus333/Auto-Reader-View-Manager"
 website: "https://addons.mozilla.org/en-US/firefox/addon/auto-reader-manager/"
 description: "Automatically enable reader-mode effortlessly"
