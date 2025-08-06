@@ -27,7 +27,6 @@
 #theme-menu {
     padding-top: 2rem;
     margin-left: 5rem;
-    transition: 250ms;
     pointer-events: auto;
     transition: opacity 250ms, margin-left 250ms;
 }
@@ -227,35 +226,121 @@ blockquote {
     border-top: var(--border-thickness) solid var(--current-text-color)
 }
 
+/*For smaller computer screens*/
+@media (max-width: 1300px) {
+    /*Puts theme button below reading-mode*/
+    #theme-menu {
+        position: fixed;
+        top: 5rem;
+        padding-top: 0;
+        margin-left: 2rem;
+        transition: opacity 250ms, top 250ms;
+    }
+
+    #desktop-sidebar-toggle:not([open]) ~ .config-wrapper #theme-menu {
+        top: 2rem;
+    }
+}
+
+/*For small tablets or something idk*/
+@media (max-width: 1100px) {
+    .details-dropdown {
+        margin-left: -1.5rem;
+    }
+
+    #desktop-sidebar-toggle[open] ~ #view #sidebar {
+        max-width: 17ch;
+        min-width: 17ch;
+    }
+}
 
 /*For the mobile nerds*/
 @media (max-width: 940px) {
     #view {
         flex-direction: column;
+        display: grid;
+    }
+
+    #desktop-sidebar-toggle,
+    #sidebar
+    {
+        display: none;
     }
 
     #mobile-sidebar-toggle {
         display: block;
-        margin-left: 1em;
-    }
-
-    #desktop-sidebar-toggle {
-        display: none;
+        position: fixed;
+        bottom: 0;
+        height: 2rem;
+        width: 100vw;
+        background-color: var(--current-surface-color);
     }
 
     
-    #mobile-sidebar-toggle[open] ~ #sidebar {
-        max-height: 100vh;
+    #mobile-sidebar-toggle summary {
+        display: grid;
+        justify-content: center;
+        align-content: center;
     }
 
-    #sidebar {
-        max-height: 0;
-        overflow: hidden;
-        max-width: 100vw !important;
-        position: relative;
-        height: fit-content;
-        grid-template-rows: auto auto auto;
+    #mobile-sidebar-toggle[open] summary svg {
+        transform: rotate(180deg);
     }
+    
+    #theme-menu {
+        visibility: hidden;
+    }
+
+    #mobile-sidebar-toggle[open] ~ .config {
+
+        #theme-menu {
+            position: relative;
+            top: 0rem;
+            display: grid;
+            justify-items: center;
+            min-width: 100vw;
+            margin: 0;
+        
+            .details-dropdown {
+                visibility: visible;
+                max-height: 4rem;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                margin: 0;
+                transition: none;
+            }
+        }
+    }
+
+    #mobile-sidebar-toggle[open] ~ #view #sidebar {
+        align-self: center;
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1rem;
+        
+        min-width: 100vw;
+        max-height: 70vh;
+        overflow-y: scroll; 
+        padding: 0 2rem 0 2rem;
+        margin: 0;
+
+        #sidebar-title {
+            align-self: self-end;
+        }
+
+        #trees-container {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            align-self: center;
+        }
+    }
+    
+    #mobile-sidebar-toggle[open] ~ #view #content {
+        display: none;
+    }
+
 
     #trees ul {
         margin: 0;
@@ -264,6 +349,6 @@ blockquote {
     #content {
         max-width: 90vw;
         font-size: var(--mobile-font-size);
-        padding-top: 1em;
+        padding-bottom: 4rem;
     }
 }

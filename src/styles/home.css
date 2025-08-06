@@ -247,7 +247,8 @@
 @media (max-width: 680px) {
 
     #card {
-        margin-top: 5vh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         width: 95vw;
         height: auto;
     }
