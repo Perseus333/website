@@ -27,7 +27,7 @@
     --everforest-secondary-color: #a7c080;
     --everforest-dim-color: #9da9a0;
     
-    /*Terminal Aggressive*/
+    /*Terminal Aggressive(???)*/
     --terminal-bg-color: black;
     --terminal-surface-color: black;
     --terminal-text-color: lime;
@@ -83,7 +83,7 @@ a:link, a:visited {
 }
 
 #theme-menu {
-    max-width: 9rem;
+    max-width: 7rem;
     padding-bottom: 1em;
 }
 
@@ -92,9 +92,24 @@ a:link, a:visited {
 }
 
 .theme {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    min-width: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 6rem;
+    cursor: pointer;
+}
+
+.theme-label {
+    width: 1rem;
+}
+
+.palette-color {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
 }
 
 /*Manages the dropdown animation*/
@@ -105,9 +120,19 @@ a:link, a:visited {
     transition: max-height 300ms ease-out;
 }
 
+#theme-menu-details[open] svg {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(360deg);
+}
+
 #theme-menu-details[open] + .details-dropdown {
     max-height: 10em;
     transition: max-height 300ms ease-out;
+    border-radius: 5px;
+}
+
+.theme:hover {
+    scale: 1.05;
 }
 
 .theme[data-theme="grayscale"] {

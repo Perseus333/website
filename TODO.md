@@ -57,6 +57,8 @@
 - [x] Merge /about in one page
 - [x] Make /contact a page
 - [x] Fix catpuccin link to page with webring
+- [x] Make Themes wordless
+- [ ] Make responsive on Mobile (again)
 
 - [ ] Add breadcrumb path
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
