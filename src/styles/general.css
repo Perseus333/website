@@ -13,6 +13,11 @@
     src: url("../fonts/IBM_VGA/Mx437_IBM_VGA_8x16.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "CrimsonText";
+    src: url("../fonts/CrimsonText/CrimsonText-Italic.ttf") format("truetype");
+}
+
 :root {
     --text-font-size: 16px;
     --mobile-font-size: 14px;
@@ -20,6 +25,7 @@
     --border-thickness: 1.5px;
     --regular-font: "Monaspace_Neon", monospace;
     --paragraph-font: "Bitter";
+    --italics-font: "CrimsonText";
     --paragraph-font-size: 18px;
 }
 

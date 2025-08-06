@@ -43,7 +43,7 @@
 #desktop-sidebar-toggle:hover .icn-regular {
     opacity: 1;
     transition: 0.1s;
-    color: var(--curent-text-color);
+    color: var(--current-text-color);
 }
 
 #desktop-sidebar-toggle > summary {
@@ -131,7 +131,6 @@
 }
 
 /*Markdown Element styling*/
-
 h1 {
     border: var(--border-thickness) solid var(--current-text-color);
     padding: 0.5em;
@@ -164,6 +163,13 @@ h3 {
 #content > p, #content > ul, #content > ol {
     margin-bottom: 2em;
 }
+
+i, em {
+    font-family: var(--italics-font);
+    font-size: 22px;
+    font-style: normal;
+}
+
 
 hr {
     border-bottom: var(--border-thickness) solid var(--current-text-color);
@@ -202,6 +208,25 @@ table td {
 blockquote {
     margin-bottom: 1rem;
 }
+
+.footnote::before {
+    content: "[";
+}
+
+.footnote::after {
+    content: "]";
+}
+
+#content sup .footnote {
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.footnotes {
+    margin-top: 2rem;
+    border-top: var(--border-thickness) solid var(--current-text-color)
+}
+
 
 /*For the mobile nerds*/
 @media (max-width: 940px) {
