@@ -226,6 +226,10 @@ blockquote {
     border-top: var(--border-thickness) solid var(--current-text-color)
 }
 
+img {
+    width: 100%;
+}
+
 /*For smaller computer screens*/
 @media (max-width: 1300px) {
     /*Puts theme button below reading-mode*/
