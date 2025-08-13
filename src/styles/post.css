@@ -223,7 +223,7 @@ blockquote {
 
 .footnotes {
     margin-top: 2rem;
-    border-top: var(--border-thickness) solid var(--current-text-color)
+    border-top: var(--border-thickness) solid var(--current-text-color);
 }
 
 img {
