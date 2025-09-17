@@ -30,7 +30,7 @@
     /*Terminal Aggressive(???)*/
     --terminal-bg-color: black;
     --terminal-surface-color: black;
-    --terminal-text-color: lime;
+    --terminal-text-color: white;
     --terminal-secondary-color: lime;
     --terminal-dim-color: lime;
 }
@@ -75,6 +75,7 @@ body.theme-terminal {
     --current-text-color: var(--terminal-text-color);
     --current-secondary-color: var(--terminal-secondary-color);
     --current-dim-color: var(--terminal-text-color);
+    --paragraph-font: monospace;
     --regular-font: "IBM_VGA";
 }
 
