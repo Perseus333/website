@@ -15,6 +15,11 @@
     column-gap: 2rem;
 }
 
+.pinned {
+    border: var(--border-thickness) solid var(--current-secondary-color);
+    padding: 1em;
+}
+
 .project-content {
     color: var(--current-dim-color);
     line-height: 1.5em;
@@ -41,7 +46,6 @@
     .project {
         padding: 0;
         max-height: none;
-        border: none;
         margin-bottom: 4em;
     }
 

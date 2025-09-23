@@ -58,7 +58,8 @@
 - [x] Make /contact a page
 - [x] Fix catpuccin link to page with webring
 - [x] Make Themes wordless
-- [ ] Make responsive on Mobile (again)
+- [x] Make responsive on Mobile (again)
+- [x] Add pinned projects
 
 - [ ] Add breadcrumb path
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
@@ -74,7 +75,9 @@
 Future Projects:
 - [x] Some more GitHub projects
 - [x] AuTOTP
-- [ ] KB
+- [x] KB
+- [ ] Tasks
+- [ ] CLK
 - [ ] Rocket HUD
 
 Future Blogs:

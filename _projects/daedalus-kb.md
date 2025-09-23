@@ -4,6 +4,7 @@ tags: ["keyboard", "hardware"]
 github: https://github.com/Perseus333/daedalus-keyboard
 description: An open-source, split, wireless ergonomic keyboard with trackpad and encoder
 date: 2025-09-15
+pinned: true
 ---
 
 > Note: This is a trimmed down version of the full report. For a complete version refer to the [GitHub Repository](https://github.com/Perseus333/daedalus-keyboard)

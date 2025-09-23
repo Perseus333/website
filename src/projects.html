@@ -6,17 +6,32 @@ permalink: /projects/
 ---
 
 <div id="projects-list">
-    {% for project in site.projects reversed %}
-      <div class="project">
-        <div class="project-header">
-            <img class="thumbnail" src="/src/assets/{{ project.slug }}.webp" alt="{{ project.title }}">
-            <div class="title">
-              <a href="{{ project.url }}">{{ project.title }}</a>
-            </div>
-        </div>
-        <div class="project-content">
-            {{ project.description }}
-        </div>
+  {% assign pinned_projects = site.projects | where: "pinned", true %}
+  {% assign other_projects = site.projects  | where_exp: "item", "item.pinned != true" %}
+  {% for project in pinned_projects reversed %}
+    <div class="project pinned">
+      <div class="project-header">
+          <img class="thumbnail" src="/src/assets/{{ project.slug }}.webp" alt="{{ project.title }}">
+          <div class="title">
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          </div>
       </div>
-    {% endfor %}
+      <div class="project-content">
+          {{ project.description }}
+      </div>
+    </div>
+  {% endfor %}
+  {% for project in other_projects reversed %}
+    <div class="project">
+      <div class="project-header">
+          <img class="thumbnail" src="/src/assets/{{ project.slug }}.webp" alt="{{ project.title }}">
+          <div class="title">
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          </div>
+      </div>
+      <div class="project-content">
+          {{ project.description }}
+      </div>
+    </div>
+  {% endfor %}
 </div>
