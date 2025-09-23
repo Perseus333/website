@@ -76,7 +76,7 @@ Future Projects:
 - [x] Some more GitHub projects
 - [x] AuTOTP
 - [x] KB
-- [ ] Tasks
+- [x] Tasks
 - [ ] CLK
 - [ ] Rocket HUD
 
