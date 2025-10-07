@@ -85,7 +85,7 @@ Jekyll plugins usually have a structure similar to this one, and for best practi
 
 ```bash
 │   Gemfile
-│   jekyll-math-svg.gemspec
+│   jekyll-plugin-name.gemspec
 │
 └───lib
     │   jekyll-plugin-name.rb
