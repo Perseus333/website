@@ -29,7 +29,7 @@ Yet, as the project progressed so did my motivation, and my goal slowly shifted 
 
 Before starting the project, a plan needed to be made on what would need to be done and in which order. With the help of my mentor from the university's Design Club we laid out a plan on what I would do and until when, and most importantly we set time constraints for each task with a Gantt Chart. It was one of the first Gantt Charts that I ever did, and it was the first project I did at this scale, so the estimates weren't particularly accurate, but regardless it served as a guide on time management.
 
-![Gantt Chart of the project](/src/assets/daedalus-kb/gantt.jpg)
+![Gantt Chart of the project](/src/assets/daedalus-kb/gantt.webp)
 Fig 1. _Gantt Chart_ of the project
 
 As can be seen in the Fig 1, the project structure was going to be the following:
@@ -68,12 +68,12 @@ As described in the [Motivation](#motivation) I already had some knowledge of ke
 
 At this stage, I found a tool called [_splitKbCompare_](https://github.com/jhelvy/splitKbCompare) to compare the layouts of various keyboards which allowed me to find similarities in them, as seen in Fig 2.
 
-![_slipKbCompare_ screenshot](/src/assets/daedalus-kb/splitKbCompare.png)
+![_slipKbCompare_ screenshot](/src/assets/daedalus-kb/splitKbCompare.webp)
 Fig 2. _slipKbCompare_ screenshot
 
 During the research process, thanks to my mentor I was able to get my hands on a Razer Tartarus (Fig. 3), the first ortholinear keyboard that I had ever used. Even though there were many things about it that I did not like, mainly because it wasn't intended for typing, it provided very useful insight that would make me choose my keyboards better. I took into more consideration the build materials, the height of the keys, the actuation force, and the importance of having wrist rests. Being able to try out an ergonomic keyboard if you're building one is definitely something that I would recommend, as you can only get so much information from reviews and images.
 
-![_Razer Tartarus_ one handed gaming keyboard](/src/assets/daedalus-kb/razer_tartarus.jpg)
+![_Razer Tartarus_ one handed gaming keyboard](/src/assets/daedalus-kb/razer_tartarus.webp)
 Fig 3. _Razer Tartarus_ one handed gaming keyboard
 
 ### Parts Research
@@ -82,7 +82,7 @@ Examining the keyboards from a broad angle made me have a clearer image in mind,
 
 I also looked up alternative input options to the mouse, but I didn't research them yet, that would be done later in the [Second Stage Research](#second-stage-research).
 
-![_Moodboard_ of the different keyboards, switches and input options](/src/assets/daedalus-kb/moodboard.png)
+![_Moodboard_ of the different keyboards, switches and input options](/src/assets/daedalus-kb/moodboard.webp)
 Fig 4. _Moodboard_ of the different keyboards, switches and input options
 
 ## Design Process
@@ -92,7 +92,7 @@ As seen in the Fig. 1, the design process overlapped with the research process, 
 It was in this first drawing that I also started experimenting with including other features to the keyboard, such as all the pointing devices that I knew of and even an overly complicated rotating mechanism of the thumb-cluster to save horizontal space [^1].
 
 
-![First sketch of the keyboard, drawn in 1:1 scale after my hand](/src/assets/daedalus-kb/1to1_sketch.jpg)
+![First sketch of the keyboard, drawn in 1:1 scale after my hand](/src/assets/daedalus-kb/1to1_sketch.webp)
 Fig 5. First sketch of the keyboard, drawn in 1:1 scale after my hand
 
 Thankfully I was told by my mentor how to actually design the keyboard layout which was more or less as follows:
@@ -106,7 +106,7 @@ Thankfully I was told by my mentor how to actually design the keyboard layout wh
 
 I was advised to do isometric drawings, and since I'm not a fan of drawing many not-so straight lines with rulers, I decided that I would draw it digitally. After some research I found out that it was relatively easy to do isometric drawings in Inkscape so I used that. I've always wanted to know how to make my own SVGs, and it was the perfect opportunity to learn about the most popular FOSS tool to make them.
 
-![_Inkscape_ editor of first concept drawing](/src/assets/daedalus-kb/inkscape.png)
+![_Inkscape_ editor of first concept drawing](/src/assets/daedalus-kb/inkscape.webp)
 Fig 6. _Inkscape_ editor of first concept drawing
 
 The first concept that I made was rather simple since I was still learning how to use the SVG editor, but it had the core of the PDS, it was a Minimum Viable Product (MVP) of sorts, a baseline from which to iterate. See Fig. 6.
@@ -117,17 +117,17 @@ I think that at the third one I didn't know what to do, so I just went with what
 
 The fourth and final one was just a render of the hand-drawn sketch (Fig. 5). Albeit I removed the thumbstick for a reason that I don't know, probably for simplicity's sake.
 
-![_First concept_, baseline](/src/assets/daedalus-kb/concept1.png)
+![_First concept_, baseline](/src/assets/daedalus-kb/concept1.webp)
 Fig 7. _First concept_, baseline
 
 
-![_Second concept_, maximalist](/src/assets/daedalus-kb/concept2.png)
+![_Second concept_, maximalist](/src/assets/daedalus-kb/concept2.webp)
 Fig 8. _Second concept_, maximalist
 
-![_Third concept_, minimalist](/src/assets/daedalus-kb/concept3.png)
+![_Third concept_, minimalist](/src/assets/daedalus-kb/concept3.webp)
 Fig 9. _Third concept_, minimalist
 
-![_Fourth concept_, sketch rendered](/src/assets/daedalus-kb/concept4.png)
+![_Fourth concept_, sketch rendered](/src/assets/daedalus-kb/concept4.webp)
 Fig 10._Fourth concept_, sketch rendered
 
 ### Decision Matrix
@@ -149,7 +149,7 @@ Fig 11. _Ergogen DXF_ output
 
 With the key layout defined, I could look into the places where the components might go. Conveniently the output of ergogen can be exported as an SVG which means that I can edit it in Inkscape. Even though I named it "Final layout", it wasn't yet the final one as I would make more modifications later on, but it allowed me to see that there was space to place the microcontroller and the trackpad just above the thumb cluster. I also added it to the decision matrix and it won against the rest of the initial concepts, which I interpreted as progress. Regardless, there were some areas, such as the "Building Ease", that I just guessed, and if I were to rate them now, I would probably give each of the designs different scores than they have now.
 
-![_"Final" Layout_](/src/assets/daedalus-kb/final_layout.png)
+![_"Final" Layout_](/src/assets/daedalus-kb/final_layout.webp)
 Fig 12. _"Final" Layout_
 
 ### Second stage research
@@ -202,13 +202,13 @@ Looking back, the process is very simple, however to get started I first looked 
 
 The schematic was just drawing a grid-like pattern and extending it, and afterwards connecting it to the MCU. To be honest, keyboard designing is nothing much more than just routing. There aren't really any "hard" parts that require you to think, other than maybe avoiding vias, which is totally optional. All you do is connect the dots. See the final schematic in Fig. 13.
 
-![_Schematic_ of the keyboard](/src/assets/daedalus-kb/schematic.svg)
+![_Schematic_ of the keyboard](/src/assets/daedalus-kb/schematic.webp)
 Fig 13. _Schematic_ of the keyboard
 
 The PCB was a bit more complex than the schematic but the principle is the same, just connect the lines (and this time you get told what to connect with what). Regardless, it took several iterations to get the PCB right, but it was well worth it in the end. I tried to apply all of the best practices I learned online and even sent it to some people for revision. Huge thanks to Zach and Bennytrouser for answering my questions and verifying my PCB, they helped get things like ground pour and proper spacing in the keyboard. The full PCB can be seen in Fig. 14.
 
 
-![_Final PCB_ design](/src/assets/daedalus-kb/pcb-final.svg)
+![_Final PCB_ design](/src/assets/daedalus-kb/pcb-final.webp)
 Fig 14. _Final PCB_ design
 
 Once the PCB was done it was sent for manufacturing at [JLCPCB](https://jlcpcb.com/). In the meantime I was working on the chassis or the case of the keyboard.
@@ -219,7 +219,7 @@ At my university I had access to CATIA so I used that. It's probably overkill fo
 
 After a bit of research on different keyboard [mounting options](https://thomasbaart.nl/2019/04/07/cheat-sheet-custom-keyboard-mounting-styles/), I decided on the sandwich mount because it seemed to offer the lowest profile, and the least building complexity. What you can see in the left diagram in is what I had in mind. With the bottom plate being acrylic (frosted preferably) to be able to see the PCB from below. Thanks to my mentor who pointed out that you can't really fix a screw in a 1mm acrylic sheet and everything would fall apart. Unfortunately, I don't have access to the previous CATIA renders, except for this one that I made whilst testing the "photo mode", as seen in Fig. 15.
 
-!["_Le Epic_" titled render](/src/assets/daedalus-kb/le-epic.png)
+!["_Le Epic_" titled render](/src/assets/daedalus-kb/le-epic.webp)
 Fig 15. _Le Epic_" titled render of an exploded view of an old version of the chassis
 
 In the end I settled for the solution shown in the right of Fig. 16, which involves integrating some nuts into the chassis to hold them in place. Now I'll admit, this is very sub-optimal, as with just the height of the nuts alone, the entire keyboard is elevated \~ 2.5 mm however, but it was the best working solution at the time. In the future, if I include surface mounted switches, the design could probably be improved and I believe that the height of the keys could be lowered substantially.
@@ -231,7 +231,7 @@ Fig 16. _Mounting Designs_ evolution
 
 The trackpad was tightly integrated with the chassis, so they weren't two separate parts. I took inspiration from a [community-made design intended for the Kyria](https://www.thingiverse.com/thing:5385829), and made it a bit more compact since I could design the case around it. After some deliberation in the whiteboard (see Fig. 17) the final design was chosen.
 
-![_Trackpad Brainstorming_ in the whiteboard](/src/assets/daedalus-kb/trackpad-brainstorming.jpg)
+![_Trackpad Brainstorming_ in the whiteboard](/src/assets/daedalus-kb/trackpad-brainstorming.webp)
 Fig 17. _Trackpad Brainstorming_ in the whiteboard
 
 ## Manufacturing and Assembly
@@ -244,12 +244,12 @@ The trackpad holder 3D printed in the same way as the chassis, by tessellating t
 
 Before I had the PCB and the other components, I 3D printed them with the same dimensions to see if everything would fit inside the case, or if the switches would click into the top plate, as the tolerances were very tight there. Fortunately they did, and everything fit, as seen in Fig. 18.
 
-![_Testing Case_ print](/src/assets/daedalus-kb/print-testing.jpg)
+![_Testing Case_ print](/src/assets/daedalus-kb/print-testing.webp)
 Fig 18. _Testing Case_ print
 
 Even though the most complex part, the chassis, had been 3D printed, the other easier-to-model parts such as the top carbon fiber plate and the foam couldn't be 3D printed. For the carbon fiber plate I used a waterjet (although I couldn't operate the machine) to cut a spare unclaimed piece of carbon fiber that was collecting dust in the university's warehouse. (Thanks for letting me use it!). From the design in CATIA I made a DXF file to input it to the Computer Aided Manufacturing (CAM) waterjet machine as seen in Fig. 19.
 
-![_DXF Drawing_ of the right plate](/src/assets/daedalus-kb/dxf-drawing.jpg)
+![_DXF Drawing_ of the right plate](/src/assets/daedalus-kb/dxf-drawing.webp)
 Fig 19. _DXF Drawing_ of the right plate]
 
 The foam on the other hand required a laser machine to cut precisely. After some research into different foams like Poron, polyethylene and EVA, I found that EVA was the easiest to buy, and it didn't have any major risks when cutting it. Poron, on the other hand, released [a variety of toxic fumes](https://tools.rogerscorp.com/documents/933/hpf/poron/industrial/CO2-Laser-Cutting-of-PORON-Urethanes.aspx).
@@ -264,13 +264,13 @@ So, it turns out that the part that I had specified in the PCB editor, and the p
 
 However, there are _some_ pictures mid soldering such as: Figs. 20 to 22.
 
-![_PCB_ with just the battery connector soldered](/src/assets/daedalus-kb/soldering-pcb.jpg)
+![_PCB_ with just the battery connector soldered](/src/assets/daedalus-kb/soldering-pcb.webp)
 Fig 20. _PCB_ with just the battery connector soldered
 
-![_Backside_ of the PCB with all the switches soldered](/src/assets/daedalus-kb/soldiering-back.jpg)
+![_Backside_ of the PCB with all the switches soldered](/src/assets/daedalus-kb/soldiering-back.webp)
 Fig 21. _Backside_ of the PCB with all the switches soldered
 
-![_Keys_ soldered to the PCB](/src/assets/daedalus-kb/soldering-keys.jpg)
+![_Keys_ soldered to the PCB](/src/assets/daedalus-kb/soldering-keys.webp)
 Fig 22. _Keys_ soldered to the PCB with the carbon fiber plate in between]
 
 
@@ -278,12 +278,12 @@ Fig 22. _Keys_ soldered to the PCB with the carbon fiber plate in between]
 
 Once everything was soldered into place, I re-printed the chassis with a color of my liking, and once it was done printing, I screwed in the screws and that was it! In Fig. 23 you can see how it looked when assembled for the last time.
 
-![_Final assembly_ of the keyboard](/src/assets/daedalus-kb/kb-done.jpg)
+![_Final assembly_ of the keyboard](/src/assets/daedalus-kb/kb-done.webp)
 Fig 23. _Final assembly_ of the keyboard
 
 Afterwards (and with a better camera) I made some more pictures which you can find below, as well as a Gallery section at the [Gallery](#gallery).
 
-![_Daedalus_ in a plant pot](/src/assets/daedalus-kb/kb-plants.jpeg)
+![_Daedalus_ in a plant pot](/src/assets/daedalus-kb/kb-plants.webp)
 Fig 24. _Daedalus_ in a plant pot
 
 ## Firmware
@@ -352,7 +352,7 @@ Kind of related to the last point, but don't buy sketchy stuff. If you want thin
 
 In my case I needed to find a "turtle" button (horizontally activated but surface mounted) that matched the dimensions of the footprint I had already printed in the PCB I had already ordered. Unable to find any anywhere, I eventually found something promising on Amazon that claimed to have the size I needed (Fig. 26). To the surprise of no one but me, it didn't fit. So lesson learned, buy from a reputable vendor that includes a product specification sheet.
 
-![_Turtle Switch_ I used](/src/assets/daedalus-kb/turtle-switch.jpg)
+![_Turtle Switch_ I used](/src/assets/daedalus-kb/turtle-switch.webp)
 Fig 26. _Turtle Switch_ I used
 
 ## Future development
@@ -395,16 +395,16 @@ Thanks to all the other amazing people that helped this project become what it i
 
 ### Gallery
 
-![_Completed daedalus_ in use](/src/assets/daedalus-kb/kb-in-use.jpg)
+![_Completed daedalus_ in use](/src/assets/daedalus-kb/kb-in-use.webp)
 Fig 27. _Completed daedalus_ in use, whilst editing it's own firmware
 
 ![_Right side_ close up](/src/assets/daedalus-kb/right-closeup.jpeg)
 Fig 28. _Right side_ close up
 
-![_Partial assembly_ of the keyboard before assembly](/src/assets/daedalus-kb/fake-assembly.jpg)
+![_Partial assembly_ of the keyboard before assembly](/src/assets/daedalus-kb/fake-assembly.webp)
 Fig 29. _Partial assembly_ of the keyboard before assembly, because I wanted to see how it would look
 
-![_Deadalus_ just after finished soldering](/src/assets/daedalus-kb/kb-soldered.jpg)
+![_Deadalus_ just after finished soldering](/src/assets/daedalus-kb/kb-soldered.webp)
 Fig 30. _Deadalus_ just after finished soldering and fitted inside the temporary casing
 
 ## Appendix
@@ -472,7 +472,7 @@ Fig 30. _Deadalus_ just after finished soldering and fitted inside the temporary
 
 ### Decision Matrix
 
-![Desicion matrix](/src/assets/daedalus-kb/decision-matrix.png)
+![Desicion matrix](/src/assets/daedalus-kb/decision-matrix.webp)
 Fig 31. Decision Matrix
 
 

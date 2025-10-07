@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Monaspace_Neon";
-    src: url("../fonts/Monaspace/monaspace-neon.ttf") format("truetype");
+    src: url("../fonts/monaspace-neon.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Bitter";
-    src: url("../fonts/Bitter/Bitter-VariableFont_wght.ttf") format("truetype");
+    src: url("../fonts/Bitter.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "IBM_VGA";
-    src: url("../fonts/IBM_VGA/Mx437_IBM_VGA_8x16.ttf") format("truetype");
+    src: url("../fonts/IMB_VGA_8x16.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "CrimsonText";
-    src: url("../fonts/CrimsonText/CrimsonText-Italic.ttf") format("truetype");
+    src: url("../fonts/CrimsonText-Italic.woff2") format("woff2");
 }
 
 :root {
@@ -24,8 +24,8 @@
     --line-height: 1.8em;
     --border-thickness: 1.5px;
     --regular-font: "Monaspace_Neon", monospace;
-    --paragraph-font: "Bitter";
-    --italics-font: "CrimsonText";
+    --paragraph-font: "Bitter", serif;
+    --italics-font: "CrimsonText", serif;
     --paragraph-font-size: 18px;
 }
 

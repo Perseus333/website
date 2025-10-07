@@ -169,7 +169,7 @@ Then, log in to your Tailscale account with all your machines and connect to the
 
 If you ever get fancy and want to check the stats or configure Pi-hole, just go to http://pi.hole/ or to http://yourserveripaddress/admin from any of your devices.
 
-![homepage](/src/assets/pi-hole-vpn-homepage.png){:width="100%"}
+![homepage](/src/assets/pi-hole-vpn-homepage.webp){:width="100%"}
 
 ## Conclusion
 

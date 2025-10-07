@@ -35,7 +35,7 @@ It was more straightforward than the regular Android experience, as it featured 
 It shipped with just 12 essential apps to get you started. If you want to download more apps you can. I didn't add the Google Apps/Services add-on so it didn't include an app store, however from its default browser you can install your favorite FOSS app repository APK such as [F-Droid](https://f-droid.org/), [Droid-ify](https://droidify.eu.org/) or [Aurora Store](https://auroraoss.com/aurora-store) to download all your other apps.
 
 ## Usage
-![Home Screen](/src/assets/lineageos-homescreen.png){:width="100%"}
+![Home Screen](/src/assets/lineageos-homescreen.webp){:width="100%"}
 
 The Android 15 experience felt fresh after being stuck at the eleventh version. The UI feels snappy and responsive, although it was previously adequate. Being able to customize it further than stock options was also a plus.
 

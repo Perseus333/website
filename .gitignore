@@ -1,5 +1,9 @@
+# Jekyll artifacts
 Gemfile.lock
 /.jekyll-cache
 /_site
 .jekyll-metadata
 /bin
+# Unused images
+/src/assets/unused/
+/src/assets/*.fish
