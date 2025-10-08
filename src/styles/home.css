@@ -67,12 +67,12 @@
     border: 5px solid var(--current-bg-color);
 }
 
-#pfp-container > img {
+#pfp-container img {
     height: 7rem;
     border-radius: 100%;
 }
 
-.theme-grayscale #pfp-container > img {
+.theme-grayscale #pfp-container img {
     filter: grayscale();
 }
 

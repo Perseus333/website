@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', group: :jekyll_plugins
+# gem 'github-pages', group: :jekyll_plugins
+gem 'kramdown-math-katex'
 gem 'webrick'
 gem 'logger'
 gem 'csv'
@@ -12,3 +13,4 @@ gem 'fiddle'
 gem 'faraday-retry'
 gem 'jekyll-feed'
 gem 'jekyll-sitemap'
+gem 'jekyll-highres-link'

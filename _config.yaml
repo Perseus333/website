@@ -11,6 +11,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-highres-link
 
 feed:
   collections:
@@ -24,6 +25,9 @@ collections:
     output: true
   projects:
     output: true
+
+highres-link:
+  uncompressed_dir: uncompressed
 
 defaults:
   -
