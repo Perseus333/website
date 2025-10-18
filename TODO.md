@@ -61,6 +61,7 @@
 - [x] Make responsive on Mobile (again)
 - [x] Add pinned projects
 - [x] Make it so that images when clicked lead to the original uncompressed image
+- [ ] Add a way to add feedback / comments
 
 - [ ] Add breadcrumb path
 - [ ] Convert KaTeX formulas to SVGs on build and make a post about it
